@@ -1,0 +1,517 @@
+{
+  "communities": {
+    "0": [
+      "acovrp_broder",
+      "acovrp_broder_mitzenmacher_2004",
+      "acovrp_mitzenmacher",
+      "acovrp_russell_norvig_2020",
+      "baco2018_algorithm",
+      "baco2018_amini",
+      "baco2018_encrypted_db",
+      "baco2018_false_positive_reduction",
+      "baco2018_jafarinejad",
+      "baco2018_multi_join_query",
+      "baco2018_paper",
+      "baco2018_pheromone_penalty",
+      "baco2018_search_space_reduction",
+      "bloom1970_add_operation",
+      "bloom1970_bit_array",
+      "bloom1970_bloom",
+      "bloom1970_false_positive_rate",
+      "bloom1970_hash_functions",
+      "bloom1970_no_false_negatives",
+      "bloom1970_optimal_k",
+      "bloom1970_optimal_m",
+      "bloom1970_paper",
+      "bloom1970_query_operation",
+      "iaps2014_aco_bf_direction_pruning",
+      "iaps2014_algorithm",
+      "iaps2014_attenuated_bloom_filter",
+      "iaps2014_bandwidth_reduction",
+      "iaps2014_hop_distance_bf",
+      "iaps2014_p2p_network",
+      "iaps2014_paper",
+      "utfaco2016_algorithm",
+      "utfaco2016_bf_explored_path_pruning",
+      "utfaco2016_darpa_dataset",
+      "utfaco2016_dos_detection",
+      "utfaco2016_packet_filtering",
+      "utfaco2016_paper",
+      "utfaco2016_qos_fault_localization"
+    ],
+    "1": [
+      "acoengine_acoengine",
+      "acoengine_acoengine_acoengine",
+      "acoengine_acoengine_constructsolution",
+      "acoengine_acoengine_depositpheromone",
+      "acoengine_acoengine_initpheromone",
+      "acoengine_acoengine_nearestneighbordist",
+      "acoengine_acoengine_selectnext",
+      "acoengine_acoengine_solve",
+      "acoengine_acoengine_updatepheromone",
+      "acowithlocalsearch_acowithlocalsearch_constructsolution",
+      "bloomfilter_bloomfilter_add",
+      "localsearch_localsearch",
+      "localsearch_localsearch_applytabu",
+      "localsearch_localsearch_applytwoopt",
+      "localsearch_localsearch_routedist",
+      "localsearch_localsearch_tabu",
+      "localsearch_localsearch_twoopt",
+      "localsearch_localsearch_twooptswap",
+      "mmasengine_mmasengine",
+      "mmasengine_mmasengine_branchingfactor",
+      "mmasengine_mmasengine_computetmin",
+      "mmasengine_mmasengine_mmasengine",
+      "mmasengine_mmasengine_solve",
+      "mmasengine_mmasengine_updatepheromone",
+      "mmasengine_mmasengine_useglobalbest",
+      "mmaswithbloomfilter_mmaswithbloomfilter_solve",
+      "src_main_java_vrp_acoengine_java",
+      "src_main_java_vrp_localsearch_java",
+      "src_main_java_vrp_mmasengine_java",
+      "vrpproblem_vrpproblem_size",
+      "vrpsolution_vrpsolution_calcdistance"
+    ],
+    "2": [
+      "acovrp_adaptive_bf_activation",
+      "acovrp_birattari",
+      "acovrp_dorigo_birattari_2006",
+      "acovrp_probabilistic_decay",
+      "acovrp_soft_penalty_bf_novelty",
+      "bloom1970_counting_variant",
+      "bloom1970_decay_operation",
+      "bloom1970_novel_application",
+      "bloom1970_project_load_context_key",
+      "bloom1970_soft_penalty",
+      "bloom1970_stagnation_window",
+      "mmas2000_fgb_schedule",
+      "mmas2000_hoos",
+      "mmas2000_lambda_branching",
+      "mmas2000_paper",
+      "mmas2000_pheromone_clipping",
+      "mmas2000_single_ant_update",
+      "mmas2000_stagnation_reinit",
+      "mmas2000_stutzle",
+      "mmas2000_tmax_formula",
+      "mmas2000_tmin_formula",
+      "readme_AcoWithBloomFilter_class",
+      "readme_MmasEngine_class",
+      "readme_MmasWithBloomFilter_class",
+      "readme_bloom_filter_paper",
+      "readme_mmas_paper"
+    ],
+    "3": [
+      "acowithbloomfilter_acowithbloomfilter",
+      "acowithbloomfilter_acowithbloomfilter_acowithbloomfilter",
+      "acowithbloomfilter_acowithbloomfilter_constructsolution",
+      "acowithbloomfilter_acowithbloomfilter_makekey",
+      "acowithbloomfilter_acowithbloomfilter_selectnext",
+      "acowithbloomfilter_acowithbloomfilter_solve",
+      "acowithbloomfilter_acowithbloomfilter_updatepheromone",
+      "bloomfilter_bloomfilter",
+      "bloomfilter_bloomfilter_bloomfilter",
+      "bloomfilter_bloomfilter_clear",
+      "bloomfilter_bloomfilter_decay",
+      "bloomfilter_bloomfilter_mightcontain",
+      "bloomfilter_bloomfilter_optimalbitsetsize",
+      "bloomfilter_bloomfilter_optimalnumhashes",
+      "mmaswithbloomfilter_mmaswithbloomfilter",
+      "mmaswithbloomfilter_mmaswithbloomfilter_makekey",
+      "mmaswithbloomfilter_mmaswithbloomfilter_mmaswithbloomfilter",
+      "mmaswithbloomfilter_mmaswithbloomfilter_selectnext",
+      "src_main_java_vrp_acowithbloomfilter_java",
+      "src_main_java_vrp_bloomfilter_java",
+      "src_main_java_vrp_mmaswithbloomfilter_java",
+      "src_main_java_vrp_visitkey_java",
+      "visitkey_visitkey",
+      "visitkey_visitkey_gethashes",
+      "visitkey_visitkey_visitkey"
+    ],
+    "4": [
+      "acovrp_acs1997_paper",
+      "acovrp_acs_global_update_best_ant",
+      "acovrp_acs_local_pheromone_update",
+      "acovrp_acs_pseudo_random_rule",
+      "acovrp_blum",
+      "acovrp_dorigo_blum_2005_survey",
+      "acovrp_gambardella",
+      "acovrp_macs_vrptw_paper",
+      "acovrp_taillard",
+      "acovrp_vrp_time_windows",
+      "as1996_Q_param",
+      "as1996_alpha_param",
+      "as1996_beta_param",
+      "as1996_colorni",
+      "as1996_dorigo",
+      "as1996_heuristic_visibility",
+      "as1996_maniezzo",
+      "as1996_nearest_neighbor_heuristic",
+      "as1996_paper",
+      "as1996_pheromone_init",
+      "as1996_pheromone_update",
+      "as1996_rho_param",
+      "as1996_transition_rule",
+      "readme_AcoEngine_class",
+      "readme_ant_system_paper"
+    ],
+    "5": [
+      "readme_LocalSearch_class",
+      "readme_tabu_search_paper",
+      "readme_two_opt_paper",
+      "tabu1986_paper",
+      "tabu1989_paper",
+      "tabu1990_paper",
+      "tabu_aspiration_criterion",
+      "tabu_core_mechanism",
+      "tabu_dynamic_tenure",
+      "tabu_fifo_eviction",
+      "tabu_glover",
+      "tabu_list",
+      "twoopt1958_croes",
+      "twoopt1958_croes_paper",
+      "twoopt1965_lin",
+      "twoopt1965_paper",
+      "twoopt_improvement_condition",
+      "twoopt_intra_route",
+      "twoopt_local_optimum",
+      "twoopt_move",
+      "twoopt_segment_reversal"
+    ],
+    "6": [
+      "AcoEngine_class",
+      "AcoWithBloomFilter_class",
+      "AcoWithLocalSearch_class",
+      "BenchmarkRunner_class",
+      "BloomFilter_class",
+      "EdgeKey_class",
+      "Hashable_interface",
+      "LoadContextKey_class",
+      "LocalSearch_class",
+      "MmasEngine_class",
+      "MmasWithBloomFilter_class",
+      "Node_class",
+      "PathKey_class",
+      "RandomVrpGenerator_class",
+      "VisitKey_class",
+      "VrpProblem_class",
+      "VrpSolution_calcDistance",
+      "VrpSolution_class"
+    ],
+    "7": [
+      "benchmarkrunner_benchmarkrunner",
+      "benchmarkrunner_benchmarkrunner_main",
+      "benchmarkrunner_benchmarkrunner_run",
+      "randomvrpgenerator_randomvrpgenerator",
+      "randomvrpgenerator_randomvrpgenerator_generate",
+      "src_main_java_vrp_benchmarkrunner_java",
+      "src_main_java_vrp_randomvrpgenerator_java"
+    ],
+    "8": [
+      "node_node",
+      "node_node_distanceto",
+      "node_node_node",
+      "src_main_java_vrp_node_java",
+      "src_main_java_vrp_vrpproblem_java",
+      "vrpproblem_vrpproblem",
+      "vrpproblem_vrpproblem_vrpproblem"
+    ],
+    "9": [
+      "edgekey_edgekey",
+      "edgekey_edgekey_edgekey",
+      "edgekey_edgekey_gethashes",
+      "src_main_java_vrp_edgekey_java"
+    ],
+    "10": [
+      "loadcontextkey_loadcontextkey",
+      "loadcontextkey_loadcontextkey_gethashes",
+      "loadcontextkey_loadcontextkey_loadcontextkey",
+      "src_main_java_vrp_loadcontextkey_java"
+    ],
+    "11": [
+      "pathkey_pathkey",
+      "pathkey_pathkey_gethashes",
+      "pathkey_pathkey_pathkey",
+      "src_main_java_vrp_pathkey_java"
+    ],
+    "12": [
+      "claude_md_graphify_plugin",
+      "claude_md_paper_verifier_agent",
+      "claude_md_project_config",
+      "claude_md_security_guidance_hook"
+    ],
+    "13": [
+      "acovrp_bell",
+      "acovrp_bell_mcmullen_2004_paper",
+      "acovrp_cvrp",
+      "acovrp_mcmullen"
+    ],
+    "14": [
+      "acowithlocalsearch_acowithlocalsearch",
+      "acowithlocalsearch_acowithlocalsearch_acowithlocalsearch",
+      "src_main_java_vrp_acowithlocalsearch_java"
+    ],
+    "15": [
+      "hashable_hashable",
+      "hashable_hashable_gethashes",
+      "src_main_java_vrp_hashable_java"
+    ],
+    "16": [
+      "src_main_java_vrp_vrpsolution_java",
+      "vrpsolution_vrpsolution",
+      "vrpsolution_vrpsolution_vrpsolution"
+    ],
+    "17": [
+      "readme_load_context_key",
+      "readme_mmas_stagnation_bf_activation",
+      "readme_novel_contribution"
+    ],
+    "18": [
+      "claude_md_advisor_hook",
+      "claude_md_implementer_role"
+    ],
+    "19": [
+      "acovrp_reimann",
+      "acovrp_reimann_dants_2004_paper"
+    ],
+    "20": [
+      "LocalSearch_twoOpt"
+    ],
+    "21": [
+      "LocalSearch_tabu"
+    ],
+    "22": [
+      "BloomFilter_mightContain"
+    ],
+    "23": [
+      "BloomFilter_decay"
+    ],
+    "24": [
+      "claude_md_src_dir"
+    ],
+    "25": [
+      "claude_md_out_dir"
+    ],
+    "26": [
+      "readme_aco_vrp_related"
+    ],
+    "27": [
+      "as1996_ant_colony"
+    ],
+    "28": [
+      "mmas2000_pbest_param"
+    ],
+    "29": [
+      "mmas2000_lambda_param"
+    ],
+    "30": [
+      "mmas2000_branching_threshold"
+    ],
+    "31": [
+      "mmas2000_tmax_init"
+    ],
+    "32": [
+      "twoopt_complexity"
+    ],
+    "33": [
+      "tabu_max_iter"
+    ],
+    "34": [
+      "bloom1970_no_deletion"
+    ],
+    "35": [
+      "bloom1970_space_efficiency"
+    ],
+    "36": [
+      "acovrp_bianchi_2006_paper"
+    ],
+    "37": [
+      "baco2018_bucket_join_evaluation"
+    ]
+  },
+  "cohesion": {
+    "0": 0.06,
+    "1": 0.16,
+    "2": 0.09,
+    "3": 0.12,
+    "4": 0.09,
+    "5": 0.11,
+    "6": 0.15,
+    "7": 0.33,
+    "8": 0.29,
+    "9": 0.5,
+    "10": 0.5,
+    "11": 0.5,
+    "12": 0.5,
+    "13": 0.5,
+    "14": 0.67,
+    "15": 0.67,
+    "16": 0.67,
+    "17": 0.67,
+    "18": 1.0,
+    "19": 1.0,
+    "20": 1.0,
+    "21": 1.0,
+    "22": 1.0,
+    "23": 1.0,
+    "24": 1.0,
+    "25": 1.0,
+    "26": 1.0,
+    "27": 1.0,
+    "28": 1.0,
+    "29": 1.0,
+    "30": 1.0,
+    "31": 1.0,
+    "32": 1.0,
+    "33": 1.0,
+    "34": 1.0,
+    "35": 1.0,
+    "36": 1.0,
+    "37": 1.0
+  },
+  "gods": [
+    {
+      "id": "as1996_paper",
+      "label": "Ant System Paper (Dorigo, Maniezzo, Colorni 1996)",
+      "degree": 13
+    },
+    {
+      "id": "bloom1970_paper",
+      "label": "Bloom Filter Paper (Bloom 1970)",
+      "degree": 13
+    },
+    {
+      "id": "mmas2000_paper",
+      "label": "MAX-MIN Ant System Paper (St\u00fctzle & Hoos 2000)",
+      "degree": 11
+    },
+    {
+      "id": "baco2018_algorithm",
+      "label": "BACO: Bloom-filter Enhanced ACO Algorithm",
+      "degree": 11
+    },
+    {
+      "id": "acoengine_acoengine",
+      "label": "AcoEngine",
+      "degree": 9
+    },
+    {
+      "id": "utfaco2016_algorithm",
+      "label": "UTFACO: Unified Threat Identification and Fault Localization ACO",
+      "degree": 9
+    },
+    {
+      "id": "bloomfilter_bloomfilter",
+      "label": "BloomFilter",
+      "degree": 8
+    },
+    {
+      "id": "bloom1970_novel_application",
+      "label": "Novel ACO+Bloom Filter VRP Application (No Prior Paper)",
+      "degree": 8
+    },
+    {
+      "id": "acowithbloomfilter_acowithbloomfilter",
+      "label": "AcoWithBloomFilter",
+      "degree": 7
+    },
+    {
+      "id": "localsearch_localsearch",
+      "label": "LocalSearch",
+      "degree": 7
+    }
+  ],
+  "surprises": [
+    {
+      "source": "MAX-MIN Ant System Paper (St\u00fctzle & Hoos 2000)",
+      "target": "Ant System Paper (Dorigo, Maniezzo, Colorni 1996)",
+      "source_files": [
+        "papers/02_mmas_stutzle_hoos_2000.md",
+        "papers/01_ant_system_dorigo_1996.md"
+      ],
+      "confidence": "INFERRED",
+      "relation": "extends",
+      "why": "inferred connection - not explicitly stated in source; bridges separate communities"
+    },
+    {
+      "source": "BACO: Bloom-filter Enhanced ACO Algorithm",
+      "target": "Ant System Paper (Dorigo, Maniezzo, Colorni 1996)",
+      "source_files": [
+        "papers/baco_encrypted_db_bloom_2018.md",
+        "papers/01_ant_system_dorigo_1996.md"
+      ],
+      "confidence": "INFERRED",
+      "relation": "extends",
+      "why": "inferred connection - not explicitly stated in source; bridges separate communities"
+    },
+    {
+      "source": "IAPS: Improved Adaptive Probabilistic Search Algorithm",
+      "target": "Ant System Paper (Dorigo, Maniezzo, Colorni 1996)",
+      "source_files": [
+        "papers/iaps_p2p_aco_bloom_2014.md",
+        "papers/01_ant_system_dorigo_1996.md"
+      ],
+      "confidence": "INFERRED",
+      "relation": "uses",
+      "why": "inferred connection - not explicitly stated in source; bridges separate communities"
+    },
+    {
+      "source": "UTFACO: Unified Threat Identification and Fault Localization ACO",
+      "target": "Ant System Paper (Dorigo, Maniezzo, Colorni 1996)",
+      "source_files": [
+        "papers/utfaco_dos_qos_2016.md",
+        "papers/01_ant_system_dorigo_1996.md"
+      ],
+      "confidence": "INFERRED",
+      "relation": "uses",
+      "why": "inferred connection - not explicitly stated in source; bridges separate communities"
+    },
+    {
+      "source": "ACO Theory Survey (Dorigo & Blum 2005)",
+      "target": "MAX-MIN Ant System Paper (St\u00fctzle & Hoos 2000)",
+      "source_files": [
+        "papers/06_aco_vrp_related.md",
+        "papers/02_mmas_stutzle_hoos_2000.md"
+      ],
+      "confidence": "INFERRED",
+      "relation": "surveys",
+      "why": "inferred connection - not explicitly stated in source; bridges separate communities"
+    }
+  ],
+  "questions": [
+    {
+      "type": "bridge_node",
+      "question": "Why does `Ant System Paper (Dorigo, Maniezzo, Colorni 1996)` connect `Community 4` to `Community 0`, `Community 2`?",
+      "why": "High betweenness centrality (0.068) - this node is a cross-community bridge."
+    },
+    {
+      "type": "bridge_node",
+      "question": "Why does `BACO: Bloom-filter Enhanced ACO Algorithm` connect `Community 0` to `Community 2`, `Community 4`?",
+      "why": "High betweenness centrality (0.048) - this node is a cross-community bridge."
+    },
+    {
+      "type": "verify_inferred",
+      "question": "Are the 6 inferred relationships involving `Ant System Paper (Dorigo, Maniezzo, Colorni 1996)` (e.g. with `MAX-MIN Ant System Paper (St\u00fctzle & Hoos 2000)` and `Ant Colony System Paper (Dorigo & Gambardella 1997)`) actually correct?",
+      "why": "`Ant System Paper (Dorigo, Maniezzo, Colorni 1996)` has 6 INFERRED edges - model-reasoned connections that need verification."
+    },
+    {
+      "type": "verify_inferred",
+      "question": "Are the 2 inferred relationships involving `MAX-MIN Ant System Paper (St\u00fctzle & Hoos 2000)` (e.g. with `Ant System Paper (Dorigo, Maniezzo, Colorni 1996)` and `ACO Theory Survey (Dorigo & Blum 2005)`) actually correct?",
+      "why": "`MAX-MIN Ant System Paper (St\u00fctzle & Hoos 2000)` has 2 INFERRED edges - model-reasoned connections that need verification."
+    },
+    {
+      "type": "verify_inferred",
+      "question": "Are the 4 inferred relationships involving `BACO: Bloom-filter Enhanced ACO Algorithm` (e.g. with `Ant System Paper (Dorigo, Maniezzo, Colorni 1996)` and `Novel ACO+Bloom Filter VRP Application (No Prior Paper)`) actually correct?",
+      "why": "`BACO: Bloom-filter Enhanced ACO Algorithm` has 4 INFERRED edges - model-reasoned connections that need verification."
+    },
+    {
+      "type": "isolated_nodes",
+      "question": "What connects `LocalSearch Utility Class`, `twoOpt Method`, `tabu Method` to the rest of the system?",
+      "why": "100 weakly-connected nodes found - possible documentation gaps or missing edges."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `Community 0` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.06 - nodes in this community are weakly interconnected."
+    }
+  ]
+}

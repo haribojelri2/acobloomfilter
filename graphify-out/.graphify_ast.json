@@ -1,0 +1,2257 @@
+{
+  "nodes": [
+    {
+      "id": "src_main_java_vrp_acoengine_java",
+      "label": "AcoEngine.java",
+      "file_type": "code",
+      "source_file": "src\\main\\java\\vrp\\AcoEngine.java",
+      "source_location": "L1"
+    },
+    {
+      "id": "acoengine_acoengine",
+      "label": "AcoEngine",
+      "file_type": "code",
+      "source_file": "src\\main\\java\\vrp\\AcoEngine.java",
+      "source_location": "L5"
+    },
+    {
+      "id": "acoengine_acoengine_acoengine",
+      "label": ".AcoEngine()",
+      "file_type": "code",
+      "source_file": "src\\main\\java\\vrp\\AcoEngine.java",
+      "source_location": "L16"
+    },
+    {
+      "id": "acoengine_acoengine_initpheromone",
+      "label": ".initPheromone()",
+      "file_type": "code",
+      "source_file": "src\\main\\java\\vrp\\AcoEngine.java",
+      "source_location": "L28"
+    },
+    {
+      "id": "acoengine_acoengine_nearestneighbordist",
+      "label": ".nearestNeighborDist()",
+      "file_type": "code",
+      "source_file": "src\\main\\java\\vrp\\AcoEngine.java",
+      "source_location": "L37"
+    },
+    {
+      "id": "acoengine_acoengine_solve",
+      "label": ".solve()",
+      "file_type": "code",
+      "source_file": "src\\main\\java\\vrp\\AcoEngine.java",
+      "source_location": "L61"
+    },
+    {
+      "id": "acoengine_acoengine_constructsolution",
+      "label": ".constructSolution()",
+      "file_type": "code",
+      "source_file": "src\\main\\java\\vrp\\AcoEngine.java",
+      "source_location": "L78"
+    },
+    {
+      "id": "acoengine_acoengine_selectnext",
+      "label": ".selectNext()",
+      "file_type": "code",
+      "source_file": "src\\main\\java\\vrp\\AcoEngine.java",
+      "source_location": "L118"
+    },
+    {
+      "id": "acoengine_acoengine_updatepheromone",
+      "label": ".updatePheromone()",
+      "file_type": "code",
+      "source_file": "src\\main\\java\\vrp\\AcoEngine.java",
+      "source_location": "L144"
+    },
+    {
+      "id": "acoengine_acoengine_depositpheromone",
+      "label": ".depositPheromone()",
+      "file_type": "code",
+      "source_file": "src\\main\\java\\vrp\\AcoEngine.java",
+      "source_location": "L157"
+    },
+    {
+      "id": "src_main_java_vrp_acowithbloomfilter_java",
+      "label": "AcoWithBloomFilter.java",
+      "file_type": "code",
+      "source_file": "src\\main\\java\\vrp\\AcoWithBloomFilter.java",
+      "source_location": "L1"
+    },
+    {
+      "id": "acowithbloomfilter_acowithbloomfilter",
+      "label": "AcoWithBloomFilter",
+      "file_type": "code",
+      "source_file": "src\\main\\java\\vrp\\AcoWithBloomFilter.java",
+      "source_location": "L6"
+    },
+    {
+      "id": "acowithbloomfilter_acowithbloomfilter_acowithbloomfilter",
+      "label": ".AcoWithBloomFilter()",
+      "file_type": "code",
+      "source_file": "src\\main\\java\\vrp\\AcoWithBloomFilter.java",
+      "source_location": "L17"
+    },
+    {
+      "id": "acowithbloomfilter_acowithbloomfilter_makekey",
+      "label": ".makeKey()",
+      "file_type": "code",
+      "source_file": "src\\main\\java\\vrp\\AcoWithBloomFilter.java",
+      "source_location": "L28"
+    },
+    {
+      "id": "acowithbloomfilter_acowithbloomfilter_selectnext",
+      "label": ".selectNext()",
+      "file_type": "code",
+      "source_file": "src\\main\\java\\vrp\\AcoWithBloomFilter.java",
+      "source_location": "L32"
+    },
+    {
+      "id": "acowithbloomfilter_acowithbloomfilter_updatepheromone",
+      "label": ".updatePheromone()",
+      "file_type": "code",
+      "source_file": "src\\main\\java\\vrp\\AcoWithBloomFilter.java",
+      "source_location": "L61"
+    },
+    {
+      "id": "acowithbloomfilter_acowithbloomfilter_solve",
+      "label": ".solve()",
+      "file_type": "code",
+      "source_file": "src\\main\\java\\vrp\\AcoWithBloomFilter.java",
+      "source_location": "L112"
+    },
+    {
+      "id": "acowithbloomfilter_acowithbloomfilter_constructsolution",
+      "label": ".constructSolution()",
+      "file_type": "code",
+      "source_file": "src\\main\\java\\vrp\\AcoWithBloomFilter.java",
+      "source_location": "L131"
+    },
+    {
+      "id": "src_main_java_vrp_acowithlocalsearch_java",
+      "label": "AcoWithLocalSearch.java",
+      "file_type": "code",
+      "source_file": "src\\main\\java\\vrp\\AcoWithLocalSearch.java",
+      "source_location": "L1"
+    },
+    {
+      "id": "acowithlocalsearch_acowithlocalsearch",
+      "label": "AcoWithLocalSearch",
+      "file_type": "code",
+      "source_file": "src\\main\\java\\vrp\\AcoWithLocalSearch.java",
+      "source_location": "L6"
+    },
+    {
+      "id": "acowithlocalsearch_acowithlocalsearch_acowithlocalsearch",
+      "label": ".AcoWithLocalSearch()",
+      "file_type": "code",
+      "source_file": "src\\main\\java\\vrp\\AcoWithLocalSearch.java",
+      "source_location": "L10"
+    },
+    {
+      "id": "acowithlocalsearch_acowithlocalsearch_constructsolution",
+      "label": ".constructSolution()",
+      "file_type": "code",
+      "source_file": "src\\main\\java\\vrp\\AcoWithLocalSearch.java",
+      "source_location": "L16"
+    },
+    {
+      "id": "src_main_java_vrp_benchmarkrunner_java",
+      "label": "BenchmarkRunner.java",
+      "file_type": "code",
+      "source_file": "src\\main\\java\\vrp\\BenchmarkRunner.java",
+      "source_location": "L1"
+    },
+    {
+      "id": "benchmarkrunner_benchmarkrunner",
+      "label": "BenchmarkRunner",
+      "file_type": "code",
+      "source_file": "src\\main\\java\\vrp\\BenchmarkRunner.java",
+      "source_location": "L3"
+    },
+    {
+      "id": "benchmarkrunner_benchmarkrunner_main",
+      "label": ".main()",
+      "file_type": "code",
+      "source_file": "src\\main\\java\\vrp\\BenchmarkRunner.java",
+      "source_location": "L13"
+    },
+    {
+      "id": "benchmarkrunner_benchmarkrunner_run",
+      "label": ".run()",
+      "file_type": "code",
+      "source_file": "src\\main\\java\\vrp\\BenchmarkRunner.java",
+      "source_location": "L47"
+    },
+    {
+      "id": "src_main_java_vrp_bloomfilter_java",
+      "label": "BloomFilter.java",
+      "file_type": "code",
+      "source_file": "src\\main\\java\\vrp\\BloomFilter.java",
+      "source_location": "L1"
+    },
+    {
+      "id": "bloomfilter_bloomfilter",
+      "label": "BloomFilter",
+      "file_type": "code",
+      "source_file": "src\\main\\java\\vrp\\BloomFilter.java",
+      "source_location": "L5"
+    },
+    {
+      "id": "bloomfilter_bloomfilter_bloomfilter",
+      "label": ".BloomFilter()",
+      "file_type": "code",
+      "source_file": "src\\main\\java\\vrp\\BloomFilter.java",
+      "source_location": "L10"
+    },
+    {
+      "id": "bloomfilter_bloomfilter_add",
+      "label": ".add()",
+      "file_type": "code",
+      "source_file": "src\\main\\java\\vrp\\BloomFilter.java",
+      "source_location": "L16"
+    },
+    {
+      "id": "bloomfilter_bloomfilter_mightcontain",
+      "label": ".mightContain()",
+      "file_type": "code",
+      "source_file": "src\\main\\java\\vrp\\BloomFilter.java",
+      "source_location": "L21"
+    },
+    {
+      "id": "bloomfilter_bloomfilter_clear",
+      "label": ".clear()",
+      "file_type": "code",
+      "source_file": "src\\main\\java\\vrp\\BloomFilter.java",
+      "source_location": "L27"
+    },
+    {
+      "id": "bloomfilter_bloomfilter_decay",
+      "label": ".decay()",
+      "file_type": "code",
+      "source_file": "src\\main\\java\\vrp\\BloomFilter.java",
+      "source_location": "L31"
+    },
+    {
+      "id": "bloomfilter_bloomfilter_optimalbitsetsize",
+      "label": ".optimalBitSetSize()",
+      "file_type": "code",
+      "source_file": "src\\main\\java\\vrp\\BloomFilter.java",
+      "source_location": "L36"
+    },
+    {
+      "id": "bloomfilter_bloomfilter_optimalnumhashes",
+      "label": ".optimalNumHashes()",
+      "file_type": "code",
+      "source_file": "src\\main\\java\\vrp\\BloomFilter.java",
+      "source_location": "L40"
+    },
+    {
+      "id": "src_main_java_vrp_edgekey_java",
+      "label": "EdgeKey.java",
+      "file_type": "code",
+      "source_file": "src\\main\\java\\vrp\\EdgeKey.java",
+      "source_location": "L1"
+    },
+    {
+      "id": "edgekey_edgekey",
+      "label": "EdgeKey",
+      "file_type": "code",
+      "source_file": "src\\main\\java\\vrp\\EdgeKey.java",
+      "source_location": "L3"
+    },
+    {
+      "id": "edgekey_edgekey_edgekey",
+      "label": ".EdgeKey()",
+      "file_type": "code",
+      "source_file": "src\\main\\java\\vrp\\EdgeKey.java",
+      "source_location": "L6"
+    },
+    {
+      "id": "edgekey_edgekey_gethashes",
+      "label": ".getHashes()",
+      "file_type": "code",
+      "source_file": "src\\main\\java\\vrp\\EdgeKey.java",
+      "source_location": "L11"
+    },
+    {
+      "id": "src_main_java_vrp_hashable_java",
+      "label": "Hashable.java",
+      "file_type": "code",
+      "source_file": "src\\main\\java\\vrp\\Hashable.java",
+      "source_location": "L1"
+    },
+    {
+      "id": "hashable_hashable",
+      "label": "Hashable",
+      "file_type": "code",
+      "source_file": "src\\main\\java\\vrp\\Hashable.java",
+      "source_location": "L4"
+    },
+    {
+      "id": "hashable_hashable_gethashes",
+      "label": ".getHashes()",
+      "file_type": "code",
+      "source_file": "src\\main\\java\\vrp\\Hashable.java",
+      "source_location": "L5"
+    },
+    {
+      "id": "src_main_java_vrp_loadcontextkey_java",
+      "label": "LoadContextKey.java",
+      "file_type": "code",
+      "source_file": "src\\main\\java\\vrp\\LoadContextKey.java",
+      "source_location": "L1"
+    },
+    {
+      "id": "loadcontextkey_loadcontextkey",
+      "label": "LoadContextKey",
+      "file_type": "code",
+      "source_file": "src\\main\\java\\vrp\\LoadContextKey.java",
+      "source_location": "L4"
+    },
+    {
+      "id": "loadcontextkey_loadcontextkey_loadcontextkey",
+      "label": ".LoadContextKey()",
+      "file_type": "code",
+      "source_file": "src\\main\\java\\vrp\\LoadContextKey.java",
+      "source_location": "L9"
+    },
+    {
+      "id": "loadcontextkey_loadcontextkey_gethashes",
+      "label": ".getHashes()",
+      "file_type": "code",
+      "source_file": "src\\main\\java\\vrp\\LoadContextKey.java",
+      "source_location": "L15"
+    },
+    {
+      "id": "src_main_java_vrp_localsearch_java",
+      "label": "LocalSearch.java",
+      "file_type": "code",
+      "source_file": "src\\main\\java\\vrp\\LocalSearch.java",
+      "source_location": "L1"
+    },
+    {
+      "id": "localsearch_localsearch",
+      "label": "LocalSearch",
+      "file_type": "code",
+      "source_file": "src\\main\\java\\vrp\\LocalSearch.java",
+      "source_location": "L5"
+    },
+    {
+      "id": "localsearch_localsearch_twoopt",
+      "label": ".twoOpt()",
+      "file_type": "code",
+      "source_file": "src\\main\\java\\vrp\\LocalSearch.java",
+      "source_location": "L8"
+    },
+    {
+      "id": "localsearch_localsearch_twooptswap",
+      "label": ".twoOptSwap()",
+      "file_type": "code",
+      "source_file": "src\\main\\java\\vrp\\LocalSearch.java",
+      "source_location": "L33"
+    },
+    {
+      "id": "localsearch_localsearch_tabu",
+      "label": ".tabu()",
+      "file_type": "code",
+      "source_file": "src\\main\\java\\vrp\\LocalSearch.java",
+      "source_location": "L43"
+    },
+    {
+      "id": "localsearch_localsearch_routedist",
+      "label": ".routeDist()",
+      "file_type": "code",
+      "source_file": "src\\main\\java\\vrp\\LocalSearch.java",
+      "source_location": "L106"
+    },
+    {
+      "id": "localsearch_localsearch_applytwoopt",
+      "label": ".applyTwoOpt()",
+      "file_type": "code",
+      "source_file": "src\\main\\java\\vrp\\LocalSearch.java",
+      "source_location": "L114"
+    },
+    {
+      "id": "localsearch_localsearch_applytabu",
+      "label": ".applyTabu()",
+      "file_type": "code",
+      "source_file": "src\\main\\java\\vrp\\LocalSearch.java",
+      "source_location": "L121"
+    },
+    {
+      "id": "src_main_java_vrp_mmasengine_java",
+      "label": "MmasEngine.java",
+      "file_type": "code",
+      "source_file": "src\\main\\java\\vrp\\MmasEngine.java",
+      "source_location": "L1"
+    },
+    {
+      "id": "mmasengine_mmasengine",
+      "label": "MmasEngine",
+      "file_type": "code",
+      "source_file": "src\\main\\java\\vrp\\MmasEngine.java",
+      "source_location": "L6"
+    },
+    {
+      "id": "mmasengine_mmasengine_mmasengine",
+      "label": ".MmasEngine()",
+      "file_type": "code",
+      "source_file": "src\\main\\java\\vrp\\MmasEngine.java",
+      "source_location": "L12"
+    },
+    {
+      "id": "mmasengine_mmasengine_computetmin",
+      "label": ".computeTMin()",
+      "file_type": "code",
+      "source_file": "src\\main\\java\\vrp\\MmasEngine.java",
+      "source_location": "L23"
+    },
+    {
+      "id": "mmasengine_mmasengine_useglobalbest",
+      "label": ".useGlobalBest()",
+      "file_type": "code",
+      "source_file": "src\\main\\java\\vrp\\MmasEngine.java",
+      "source_location": "L31"
+    },
+    {
+      "id": "mmasengine_mmasengine_branchingfactor",
+      "label": ".branchingFactor()",
+      "file_type": "code",
+      "source_file": "src\\main\\java\\vrp\\MmasEngine.java",
+      "source_location": "L40"
+    },
+    {
+      "id": "mmasengine_mmasengine_solve",
+      "label": ".solve()",
+      "file_type": "code",
+      "source_file": "src\\main\\java\\vrp\\MmasEngine.java",
+      "source_location": "L53"
+    },
+    {
+      "id": "mmasengine_mmasengine_updatepheromone",
+      "label": ".updatePheromone()",
+      "file_type": "code",
+      "source_file": "src\\main\\java\\vrp\\MmasEngine.java",
+      "source_location": "L93"
+    },
+    {
+      "id": "src_main_java_vrp_mmaswithbloomfilter_java",
+      "label": "MmasWithBloomFilter.java",
+      "file_type": "code",
+      "source_file": "src\\main\\java\\vrp\\MmasWithBloomFilter.java",
+      "source_location": "L1"
+    },
+    {
+      "id": "mmaswithbloomfilter_mmaswithbloomfilter",
+      "label": "MmasWithBloomFilter",
+      "file_type": "code",
+      "source_file": "src\\main\\java\\vrp\\MmasWithBloomFilter.java",
+      "source_location": "L6"
+    },
+    {
+      "id": "mmaswithbloomfilter_mmaswithbloomfilter_mmaswithbloomfilter",
+      "label": ".MmasWithBloomFilter()",
+      "file_type": "code",
+      "source_file": "src\\main\\java\\vrp\\MmasWithBloomFilter.java",
+      "source_location": "L15"
+    },
+    {
+      "id": "mmaswithbloomfilter_mmaswithbloomfilter_makekey",
+      "label": ".makeKey()",
+      "file_type": "code",
+      "source_file": "src\\main\\java\\vrp\\MmasWithBloomFilter.java",
+      "source_location": "L25"
+    },
+    {
+      "id": "mmaswithbloomfilter_mmaswithbloomfilter_selectnext",
+      "label": ".selectNext()",
+      "file_type": "code",
+      "source_file": "src\\main\\java\\vrp\\MmasWithBloomFilter.java",
+      "source_location": "L29"
+    },
+    {
+      "id": "mmaswithbloomfilter_mmaswithbloomfilter_solve",
+      "label": ".solve()",
+      "file_type": "code",
+      "source_file": "src\\main\\java\\vrp\\MmasWithBloomFilter.java",
+      "source_location": "L57"
+    },
+    {
+      "id": "src_main_java_vrp_node_java",
+      "label": "Node.java",
+      "file_type": "code",
+      "source_file": "src\\main\\java\\vrp\\Node.java",
+      "source_location": "L1"
+    },
+    {
+      "id": "node_node",
+      "label": "Node",
+      "file_type": "code",
+      "source_file": "src\\main\\java\\vrp\\Node.java",
+      "source_location": "L3"
+    },
+    {
+      "id": "node_node_node",
+      "label": ".Node()",
+      "file_type": "code",
+      "source_file": "src\\main\\java\\vrp\\Node.java",
+      "source_location": "L8"
+    },
+    {
+      "id": "node_node_distanceto",
+      "label": ".distanceTo()",
+      "file_type": "code",
+      "source_file": "src\\main\\java\\vrp\\Node.java",
+      "source_location": "L15"
+    },
+    {
+      "id": "src_main_java_vrp_pathkey_java",
+      "label": "PathKey.java",
+      "file_type": "code",
+      "source_file": "src\\main\\java\\vrp\\PathKey.java",
+      "source_location": "L1"
+    },
+    {
+      "id": "pathkey_pathkey",
+      "label": "PathKey",
+      "file_type": "code",
+      "source_file": "src\\main\\java\\vrp\\PathKey.java",
+      "source_location": "L6"
+    },
+    {
+      "id": "pathkey_pathkey_pathkey",
+      "label": ".PathKey()",
+      "file_type": "code",
+      "source_file": "src\\main\\java\\vrp\\PathKey.java",
+      "source_location": "L9"
+    },
+    {
+      "id": "pathkey_pathkey_gethashes",
+      "label": ".getHashes()",
+      "file_type": "code",
+      "source_file": "src\\main\\java\\vrp\\PathKey.java",
+      "source_location": "L13"
+    },
+    {
+      "id": "src_main_java_vrp_randomvrpgenerator_java",
+      "label": "RandomVrpGenerator.java",
+      "file_type": "code",
+      "source_file": "src\\main\\java\\vrp\\RandomVrpGenerator.java",
+      "source_location": "L1"
+    },
+    {
+      "id": "randomvrpgenerator_randomvrpgenerator",
+      "label": "RandomVrpGenerator",
+      "file_type": "code",
+      "source_file": "src\\main\\java\\vrp\\RandomVrpGenerator.java",
+      "source_location": "L5"
+    },
+    {
+      "id": "randomvrpgenerator_randomvrpgenerator_generate",
+      "label": ".generate()",
+      "file_type": "code",
+      "source_file": "src\\main\\java\\vrp\\RandomVrpGenerator.java",
+      "source_location": "L6"
+    },
+    {
+      "id": "src_main_java_vrp_visitkey_java",
+      "label": "VisitKey.java",
+      "file_type": "code",
+      "source_file": "src\\main\\java\\vrp\\VisitKey.java",
+      "source_location": "L1"
+    },
+    {
+      "id": "visitkey_visitkey",
+      "label": "VisitKey",
+      "file_type": "code",
+      "source_file": "src\\main\\java\\vrp\\VisitKey.java",
+      "source_location": "L4"
+    },
+    {
+      "id": "visitkey_visitkey_visitkey",
+      "label": ".VisitKey()",
+      "file_type": "code",
+      "source_file": "src\\main\\java\\vrp\\VisitKey.java",
+      "source_location": "L10"
+    },
+    {
+      "id": "visitkey_visitkey_gethashes",
+      "label": ".getHashes()",
+      "file_type": "code",
+      "source_file": "src\\main\\java\\vrp\\VisitKey.java",
+      "source_location": "L17"
+    },
+    {
+      "id": "src_main_java_vrp_vrpproblem_java",
+      "label": "VrpProblem.java",
+      "file_type": "code",
+      "source_file": "src\\main\\java\\vrp\\VrpProblem.java",
+      "source_location": "L1"
+    },
+    {
+      "id": "vrpproblem_vrpproblem",
+      "label": "VrpProblem",
+      "file_type": "code",
+      "source_file": "src\\main\\java\\vrp\\VrpProblem.java",
+      "source_location": "L5"
+    },
+    {
+      "id": "vrpproblem_vrpproblem_vrpproblem",
+      "label": ".VrpProblem()",
+      "file_type": "code",
+      "source_file": "src\\main\\java\\vrp\\VrpProblem.java",
+      "source_location": "L10"
+    },
+    {
+      "id": "vrpproblem_vrpproblem_size",
+      "label": ".size()",
+      "file_type": "code",
+      "source_file": "src\\main\\java\\vrp\\VrpProblem.java",
+      "source_location": "L20"
+    },
+    {
+      "id": "src_main_java_vrp_vrpsolution_java",
+      "label": "VrpSolution.java",
+      "file_type": "code",
+      "source_file": "src\\main\\java\\vrp\\VrpSolution.java",
+      "source_location": "L1"
+    },
+    {
+      "id": "vrpsolution_vrpsolution",
+      "label": "VrpSolution",
+      "file_type": "code",
+      "source_file": "src\\main\\java\\vrp\\VrpSolution.java",
+      "source_location": "L5"
+    },
+    {
+      "id": "vrpsolution_vrpsolution_vrpsolution",
+      "label": ".VrpSolution()",
+      "file_type": "code",
+      "source_file": "src\\main\\java\\vrp\\VrpSolution.java",
+      "source_location": "L9"
+    },
+    {
+      "id": "vrpsolution_vrpsolution_calcdistance",
+      "label": ".calcDistance()",
+      "file_type": "code",
+      "source_file": "src\\main\\java\\vrp\\VrpSolution.java",
+      "source_location": "L14"
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_main_java_vrp_acoengine_java",
+      "target": "util",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\main\\java\\vrp\\AcoEngine.java",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "src_main_java_vrp_acoengine_java",
+      "target": "acoengine_acoengine",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\main\\java\\vrp\\AcoEngine.java",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "acoengine_acoengine",
+      "target": "acoengine_acoengine_acoengine",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\main\\java\\vrp\\AcoEngine.java",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "acoengine_acoengine",
+      "target": "acoengine_acoengine_initpheromone",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\main\\java\\vrp\\AcoEngine.java",
+      "source_location": "L28",
+      "weight": 1.0
+    },
+    {
+      "source": "acoengine_acoengine",
+      "target": "acoengine_acoengine_nearestneighbordist",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\main\\java\\vrp\\AcoEngine.java",
+      "source_location": "L37",
+      "weight": 1.0
+    },
+    {
+      "source": "acoengine_acoengine",
+      "target": "acoengine_acoengine_solve",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\main\\java\\vrp\\AcoEngine.java",
+      "source_location": "L61",
+      "weight": 1.0
+    },
+    {
+      "source": "acoengine_acoengine",
+      "target": "acoengine_acoengine_constructsolution",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\main\\java\\vrp\\AcoEngine.java",
+      "source_location": "L78",
+      "weight": 1.0
+    },
+    {
+      "source": "acoengine_acoengine",
+      "target": "acoengine_acoengine_selectnext",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\main\\java\\vrp\\AcoEngine.java",
+      "source_location": "L118",
+      "weight": 1.0
+    },
+    {
+      "source": "acoengine_acoengine",
+      "target": "acoengine_acoengine_updatepheromone",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\main\\java\\vrp\\AcoEngine.java",
+      "source_location": "L144",
+      "weight": 1.0
+    },
+    {
+      "source": "acoengine_acoengine",
+      "target": "acoengine_acoengine_depositpheromone",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\main\\java\\vrp\\AcoEngine.java",
+      "source_location": "L157",
+      "weight": 1.0
+    },
+    {
+      "source": "acoengine_acoengine_acoengine",
+      "target": "acoengine_acoengine_initpheromone",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\main\\java\\vrp\\AcoEngine.java",
+      "source_location": "L25",
+      "weight": 1.0
+    },
+    {
+      "source": "acoengine_acoengine_initpheromone",
+      "target": "acoengine_acoengine_nearestneighbordist",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\main\\java\\vrp\\AcoEngine.java",
+      "source_location": "L31",
+      "weight": 1.0
+    },
+    {
+      "source": "acoengine_acoengine_solve",
+      "target": "acoengine_acoengine_constructsolution",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\main\\java\\vrp\\AcoEngine.java",
+      "source_location": "L65",
+      "weight": 1.0
+    },
+    {
+      "source": "acoengine_acoengine_solve",
+      "target": "acoengine_acoengine_updatepheromone",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\main\\java\\vrp\\AcoEngine.java",
+      "source_location": "L73",
+      "weight": 1.0
+    },
+    {
+      "source": "acoengine_acoengine_constructsolution",
+      "target": "acoengine_acoengine_selectnext",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\main\\java\\vrp\\AcoEngine.java",
+      "source_location": "L91",
+      "weight": 1.0
+    },
+    {
+      "source": "acoengine_acoengine_updatepheromone",
+      "target": "acoengine_acoengine_depositpheromone",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\main\\java\\vrp\\AcoEngine.java",
+      "source_location": "L153",
+      "weight": 1.0
+    },
+    {
+      "source": "src_main_java_vrp_acowithbloomfilter_java",
+      "target": "util",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\main\\java\\vrp\\AcoWithBloomFilter.java",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "src_main_java_vrp_acowithbloomfilter_java",
+      "target": "acowithbloomfilter_acowithbloomfilter",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\main\\java\\vrp\\AcoWithBloomFilter.java",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "acowithbloomfilter_acowithbloomfilter",
+      "target": "acowithbloomfilter_acowithbloomfilter_acowithbloomfilter",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\main\\java\\vrp\\AcoWithBloomFilter.java",
+      "source_location": "L17",
+      "weight": 1.0
+    },
+    {
+      "source": "acowithbloomfilter_acowithbloomfilter",
+      "target": "acowithbloomfilter_acowithbloomfilter_makekey",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\main\\java\\vrp\\AcoWithBloomFilter.java",
+      "source_location": "L28",
+      "weight": 1.0
+    },
+    {
+      "source": "acowithbloomfilter_acowithbloomfilter",
+      "target": "acowithbloomfilter_acowithbloomfilter_selectnext",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\main\\java\\vrp\\AcoWithBloomFilter.java",
+      "source_location": "L32",
+      "weight": 1.0
+    },
+    {
+      "source": "acowithbloomfilter_acowithbloomfilter",
+      "target": "acowithbloomfilter_acowithbloomfilter_updatepheromone",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\main\\java\\vrp\\AcoWithBloomFilter.java",
+      "source_location": "L61",
+      "weight": 1.0
+    },
+    {
+      "source": "acowithbloomfilter_acowithbloomfilter",
+      "target": "acowithbloomfilter_acowithbloomfilter_solve",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\main\\java\\vrp\\AcoWithBloomFilter.java",
+      "source_location": "L112",
+      "weight": 1.0
+    },
+    {
+      "source": "acowithbloomfilter_acowithbloomfilter",
+      "target": "acowithbloomfilter_acowithbloomfilter_constructsolution",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\main\\java\\vrp\\AcoWithBloomFilter.java",
+      "source_location": "L131",
+      "weight": 1.0
+    },
+    {
+      "source": "acowithbloomfilter_acowithbloomfilter_selectnext",
+      "target": "acowithbloomfilter_acowithbloomfilter_makekey",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\main\\java\\vrp\\AcoWithBloomFilter.java",
+      "source_location": "L46",
+      "weight": 1.0
+    },
+    {
+      "source": "acowithbloomfilter_acowithbloomfilter_updatepheromone",
+      "target": "acowithbloomfilter_acowithbloomfilter_makekey",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\main\\java\\vrp\\AcoWithBloomFilter.java",
+      "source_location": "L104",
+      "weight": 1.0
+    },
+    {
+      "source": "acowithbloomfilter_acowithbloomfilter_solve",
+      "target": "acowithbloomfilter_acowithbloomfilter_constructsolution",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\main\\java\\vrp\\AcoWithBloomFilter.java",
+      "source_location": "L117",
+      "weight": 1.0
+    },
+    {
+      "source": "acowithbloomfilter_acowithbloomfilter_solve",
+      "target": "acowithbloomfilter_acowithbloomfilter_updatepheromone",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\main\\java\\vrp\\AcoWithBloomFilter.java",
+      "source_location": "L126",
+      "weight": 1.0
+    },
+    {
+      "source": "src_main_java_vrp_acowithlocalsearch_java",
+      "target": "util",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\main\\java\\vrp\\AcoWithLocalSearch.java",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "src_main_java_vrp_acowithlocalsearch_java",
+      "target": "acowithlocalsearch_acowithlocalsearch",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\main\\java\\vrp\\AcoWithLocalSearch.java",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "acowithlocalsearch_acowithlocalsearch",
+      "target": "acowithlocalsearch_acowithlocalsearch_acowithlocalsearch",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\main\\java\\vrp\\AcoWithLocalSearch.java",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "acowithlocalsearch_acowithlocalsearch",
+      "target": "acowithlocalsearch_acowithlocalsearch_constructsolution",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\main\\java\\vrp\\AcoWithLocalSearch.java",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "src_main_java_vrp_benchmarkrunner_java",
+      "target": "benchmarkrunner_benchmarkrunner",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\main\\java\\vrp\\BenchmarkRunner.java",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "benchmarkrunner_benchmarkrunner",
+      "target": "benchmarkrunner_benchmarkrunner_main",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\main\\java\\vrp\\BenchmarkRunner.java",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "benchmarkrunner_benchmarkrunner",
+      "target": "benchmarkrunner_benchmarkrunner_run",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\main\\java\\vrp\\BenchmarkRunner.java",
+      "source_location": "L47",
+      "weight": 1.0
+    },
+    {
+      "source": "benchmarkrunner_benchmarkrunner_main",
+      "target": "benchmarkrunner_benchmarkrunner_run",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\main\\java\\vrp\\BenchmarkRunner.java",
+      "source_location": "L23",
+      "weight": 1.0
+    },
+    {
+      "source": "src_main_java_vrp_bloomfilter_java",
+      "target": "bitset",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\main\\java\\vrp\\BloomFilter.java",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "src_main_java_vrp_bloomfilter_java",
+      "target": "bloomfilter_bloomfilter",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\main\\java\\vrp\\BloomFilter.java",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "bloomfilter_bloomfilter",
+      "target": "bloomfilter_bloomfilter_bloomfilter",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\main\\java\\vrp\\BloomFilter.java",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "bloomfilter_bloomfilter",
+      "target": "bloomfilter_bloomfilter_add",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\main\\java\\vrp\\BloomFilter.java",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "bloomfilter_bloomfilter",
+      "target": "bloomfilter_bloomfilter_mightcontain",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\main\\java\\vrp\\BloomFilter.java",
+      "source_location": "L21",
+      "weight": 1.0
+    },
+    {
+      "source": "bloomfilter_bloomfilter",
+      "target": "bloomfilter_bloomfilter_clear",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\main\\java\\vrp\\BloomFilter.java",
+      "source_location": "L27",
+      "weight": 1.0
+    },
+    {
+      "source": "bloomfilter_bloomfilter",
+      "target": "bloomfilter_bloomfilter_decay",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\main\\java\\vrp\\BloomFilter.java",
+      "source_location": "L31",
+      "weight": 1.0
+    },
+    {
+      "source": "bloomfilter_bloomfilter",
+      "target": "bloomfilter_bloomfilter_optimalbitsetsize",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\main\\java\\vrp\\BloomFilter.java",
+      "source_location": "L36",
+      "weight": 1.0
+    },
+    {
+      "source": "bloomfilter_bloomfilter",
+      "target": "bloomfilter_bloomfilter_optimalnumhashes",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\main\\java\\vrp\\BloomFilter.java",
+      "source_location": "L40",
+      "weight": 1.0
+    },
+    {
+      "source": "bloomfilter_bloomfilter_decay",
+      "target": "bloomfilter_bloomfilter_clear",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\main\\java\\vrp\\BloomFilter.java",
+      "source_location": "L33",
+      "weight": 1.0
+    },
+    {
+      "source": "src_main_java_vrp_edgekey_java",
+      "target": "edgekey_edgekey",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\main\\java\\vrp\\EdgeKey.java",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "edgekey_edgekey",
+      "target": "edgekey_edgekey_edgekey",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\main\\java\\vrp\\EdgeKey.java",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "edgekey_edgekey",
+      "target": "edgekey_edgekey_gethashes",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\main\\java\\vrp\\EdgeKey.java",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "src_main_java_vrp_hashable_java",
+      "target": "hashable_hashable",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\main\\java\\vrp\\Hashable.java",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "hashable_hashable",
+      "target": "hashable_hashable_gethashes",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\main\\java\\vrp\\Hashable.java",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "src_main_java_vrp_loadcontextkey_java",
+      "target": "loadcontextkey_loadcontextkey",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\main\\java\\vrp\\LoadContextKey.java",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "loadcontextkey_loadcontextkey",
+      "target": "loadcontextkey_loadcontextkey_loadcontextkey",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\main\\java\\vrp\\LoadContextKey.java",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "loadcontextkey_loadcontextkey",
+      "target": "loadcontextkey_loadcontextkey_gethashes",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\main\\java\\vrp\\LoadContextKey.java",
+      "source_location": "L15",
+      "weight": 1.0
+    },
+    {
+      "source": "src_main_java_vrp_localsearch_java",
+      "target": "util",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\main\\java\\vrp\\LocalSearch.java",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "src_main_java_vrp_localsearch_java",
+      "target": "localsearch_localsearch",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\main\\java\\vrp\\LocalSearch.java",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "localsearch_localsearch",
+      "target": "localsearch_localsearch_twoopt",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\main\\java\\vrp\\LocalSearch.java",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "localsearch_localsearch",
+      "target": "localsearch_localsearch_twooptswap",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\main\\java\\vrp\\LocalSearch.java",
+      "source_location": "L33",
+      "weight": 1.0
+    },
+    {
+      "source": "localsearch_localsearch",
+      "target": "localsearch_localsearch_tabu",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\main\\java\\vrp\\LocalSearch.java",
+      "source_location": "L43",
+      "weight": 1.0
+    },
+    {
+      "source": "localsearch_localsearch",
+      "target": "localsearch_localsearch_routedist",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\main\\java\\vrp\\LocalSearch.java",
+      "source_location": "L106",
+      "weight": 1.0
+    },
+    {
+      "source": "localsearch_localsearch",
+      "target": "localsearch_localsearch_applytwoopt",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\main\\java\\vrp\\LocalSearch.java",
+      "source_location": "L114",
+      "weight": 1.0
+    },
+    {
+      "source": "localsearch_localsearch",
+      "target": "localsearch_localsearch_applytabu",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\main\\java\\vrp\\LocalSearch.java",
+      "source_location": "L121",
+      "weight": 1.0
+    },
+    {
+      "source": "localsearch_localsearch_twoopt",
+      "target": "localsearch_localsearch_twooptswap",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\main\\java\\vrp\\LocalSearch.java",
+      "source_location": "L24",
+      "weight": 1.0
+    },
+    {
+      "source": "localsearch_localsearch_tabu",
+      "target": "localsearch_localsearch_routedist",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\main\\java\\vrp\\LocalSearch.java",
+      "source_location": "L46",
+      "weight": 1.0
+    },
+    {
+      "source": "localsearch_localsearch_applytwoopt",
+      "target": "localsearch_localsearch_twoopt",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\main\\java\\vrp\\LocalSearch.java",
+      "source_location": "L117",
+      "weight": 1.0
+    },
+    {
+      "source": "localsearch_localsearch_applytabu",
+      "target": "localsearch_localsearch_tabu",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\main\\java\\vrp\\LocalSearch.java",
+      "source_location": "L125",
+      "weight": 1.0
+    },
+    {
+      "source": "src_main_java_vrp_mmasengine_java",
+      "target": "util",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\main\\java\\vrp\\MmasEngine.java",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "src_main_java_vrp_mmasengine_java",
+      "target": "mmasengine_mmasengine",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\main\\java\\vrp\\MmasEngine.java",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "mmasengine_mmasengine",
+      "target": "mmasengine_mmasengine_mmasengine",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\main\\java\\vrp\\MmasEngine.java",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "mmasengine_mmasengine",
+      "target": "mmasengine_mmasengine_computetmin",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\main\\java\\vrp\\MmasEngine.java",
+      "source_location": "L23",
+      "weight": 1.0
+    },
+    {
+      "source": "mmasengine_mmasengine",
+      "target": "mmasengine_mmasengine_useglobalbest",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\main\\java\\vrp\\MmasEngine.java",
+      "source_location": "L31",
+      "weight": 1.0
+    },
+    {
+      "source": "mmasengine_mmasengine",
+      "target": "mmasengine_mmasengine_branchingfactor",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\main\\java\\vrp\\MmasEngine.java",
+      "source_location": "L40",
+      "weight": 1.0
+    },
+    {
+      "source": "mmasengine_mmasengine",
+      "target": "mmasengine_mmasengine_solve",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\main\\java\\vrp\\MmasEngine.java",
+      "source_location": "L53",
+      "weight": 1.0
+    },
+    {
+      "source": "mmasengine_mmasengine",
+      "target": "mmasengine_mmasengine_updatepheromone",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\main\\java\\vrp\\MmasEngine.java",
+      "source_location": "L93",
+      "weight": 1.0
+    },
+    {
+      "source": "mmasengine_mmasengine_mmasengine",
+      "target": "mmasengine_mmasengine_computetmin",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\main\\java\\vrp\\MmasEngine.java",
+      "source_location": "L18",
+      "weight": 1.0
+    },
+    {
+      "source": "mmasengine_mmasengine_solve",
+      "target": "mmasengine_mmasengine_computetmin",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\main\\java\\vrp\\MmasEngine.java",
+      "source_location": "L74",
+      "weight": 1.0
+    },
+    {
+      "source": "mmasengine_mmasengine_solve",
+      "target": "mmasengine_mmasengine_useglobalbest",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\main\\java\\vrp\\MmasEngine.java",
+      "source_location": "L78",
+      "weight": 1.0
+    },
+    {
+      "source": "mmasengine_mmasengine_solve",
+      "target": "mmasengine_mmasengine_branchingfactor",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\main\\java\\vrp\\MmasEngine.java",
+      "source_location": "L87",
+      "weight": 1.0
+    },
+    {
+      "source": "src_main_java_vrp_mmaswithbloomfilter_java",
+      "target": "util",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\main\\java\\vrp\\MmasWithBloomFilter.java",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "src_main_java_vrp_mmaswithbloomfilter_java",
+      "target": "mmaswithbloomfilter_mmaswithbloomfilter",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\main\\java\\vrp\\MmasWithBloomFilter.java",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "mmaswithbloomfilter_mmaswithbloomfilter",
+      "target": "mmaswithbloomfilter_mmaswithbloomfilter_mmaswithbloomfilter",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\main\\java\\vrp\\MmasWithBloomFilter.java",
+      "source_location": "L15",
+      "weight": 1.0
+    },
+    {
+      "source": "mmaswithbloomfilter_mmaswithbloomfilter",
+      "target": "mmaswithbloomfilter_mmaswithbloomfilter_makekey",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\main\\java\\vrp\\MmasWithBloomFilter.java",
+      "source_location": "L25",
+      "weight": 1.0
+    },
+    {
+      "source": "mmaswithbloomfilter_mmaswithbloomfilter",
+      "target": "mmaswithbloomfilter_mmaswithbloomfilter_selectnext",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\main\\java\\vrp\\MmasWithBloomFilter.java",
+      "source_location": "L29",
+      "weight": 1.0
+    },
+    {
+      "source": "mmaswithbloomfilter_mmaswithbloomfilter",
+      "target": "mmaswithbloomfilter_mmaswithbloomfilter_solve",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\main\\java\\vrp\\MmasWithBloomFilter.java",
+      "source_location": "L57",
+      "weight": 1.0
+    },
+    {
+      "source": "mmaswithbloomfilter_mmaswithbloomfilter_selectnext",
+      "target": "mmaswithbloomfilter_mmaswithbloomfilter_makekey",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\main\\java\\vrp\\MmasWithBloomFilter.java",
+      "source_location": "L42",
+      "weight": 1.0
+    },
+    {
+      "source": "mmaswithbloomfilter_mmaswithbloomfilter_solve",
+      "target": "mmaswithbloomfilter_mmaswithbloomfilter_makekey",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\main\\java\\vrp\\MmasWithBloomFilter.java",
+      "source_location": "L120",
+      "weight": 1.0
+    },
+    {
+      "source": "src_main_java_vrp_node_java",
+      "target": "node_node",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\main\\java\\vrp\\Node.java",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "node_node",
+      "target": "node_node_node",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\main\\java\\vrp\\Node.java",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "node_node",
+      "target": "node_node_distanceto",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\main\\java\\vrp\\Node.java",
+      "source_location": "L15",
+      "weight": 1.0
+    },
+    {
+      "source": "src_main_java_vrp_pathkey_java",
+      "target": "list",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\main\\java\\vrp\\PathKey.java",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "src_main_java_vrp_pathkey_java",
+      "target": "pathkey_pathkey",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\main\\java\\vrp\\PathKey.java",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "pathkey_pathkey",
+      "target": "pathkey_pathkey_pathkey",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\main\\java\\vrp\\PathKey.java",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "pathkey_pathkey",
+      "target": "pathkey_pathkey_gethashes",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\main\\java\\vrp\\PathKey.java",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "src_main_java_vrp_randomvrpgenerator_java",
+      "target": "util",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\main\\java\\vrp\\RandomVrpGenerator.java",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "src_main_java_vrp_randomvrpgenerator_java",
+      "target": "randomvrpgenerator_randomvrpgenerator",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\main\\java\\vrp\\RandomVrpGenerator.java",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "randomvrpgenerator_randomvrpgenerator",
+      "target": "randomvrpgenerator_randomvrpgenerator_generate",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\main\\java\\vrp\\RandomVrpGenerator.java",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "src_main_java_vrp_visitkey_java",
+      "target": "visitkey_visitkey",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\main\\java\\vrp\\VisitKey.java",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "visitkey_visitkey",
+      "target": "visitkey_visitkey_visitkey",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\main\\java\\vrp\\VisitKey.java",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "visitkey_visitkey",
+      "target": "visitkey_visitkey_gethashes",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\main\\java\\vrp\\VisitKey.java",
+      "source_location": "L17",
+      "weight": 1.0
+    },
+    {
+      "source": "src_main_java_vrp_vrpproblem_java",
+      "target": "list",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\main\\java\\vrp\\VrpProblem.java",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "src_main_java_vrp_vrpproblem_java",
+      "target": "vrpproblem_vrpproblem",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\main\\java\\vrp\\VrpProblem.java",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "vrpproblem_vrpproblem",
+      "target": "vrpproblem_vrpproblem_vrpproblem",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\main\\java\\vrp\\VrpProblem.java",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "vrpproblem_vrpproblem",
+      "target": "vrpproblem_vrpproblem_size",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\main\\java\\vrp\\VrpProblem.java",
+      "source_location": "L20",
+      "weight": 1.0
+    },
+    {
+      "source": "vrpproblem_vrpproblem_vrpproblem",
+      "target": "vrpproblem_vrpproblem_size",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\main\\java\\vrp\\VrpProblem.java",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "src_main_java_vrp_vrpsolution_java",
+      "target": "util",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\main\\java\\vrp\\VrpSolution.java",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "src_main_java_vrp_vrpsolution_java",
+      "target": "vrpsolution_vrpsolution",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\main\\java\\vrp\\VrpSolution.java",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "vrpsolution_vrpsolution",
+      "target": "vrpsolution_vrpsolution_vrpsolution",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\main\\java\\vrp\\VrpSolution.java",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "vrpsolution_vrpsolution",
+      "target": "vrpsolution_vrpsolution_calcdistance",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\main\\java\\vrp\\VrpSolution.java",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "acoengine_acoengine_initpheromone",
+      "target": "vrpproblem_vrpproblem_size",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src\\main\\java\\vrp\\AcoEngine.java",
+      "source_location": "L29",
+      "weight": 1.0
+    },
+    {
+      "source": "acoengine_acoengine_nearestneighbordist",
+      "target": "vrpproblem_vrpproblem_size",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src\\main\\java\\vrp\\AcoEngine.java",
+      "source_location": "L38",
+      "weight": 1.0
+    },
+    {
+      "source": "acoengine_acoengine_solve",
+      "target": "bloomfilter_bloomfilter_add",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src\\main\\java\\vrp\\AcoEngine.java",
+      "source_location": "L66",
+      "weight": 1.0
+    },
+    {
+      "source": "acoengine_acoengine_solve",
+      "target": "vrpsolution_vrpsolution_calcdistance",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src\\main\\java\\vrp\\AcoEngine.java",
+      "source_location": "L67",
+      "weight": 1.0
+    },
+    {
+      "source": "acoengine_acoengine_constructsolution",
+      "target": "vrpproblem_vrpproblem_size",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src\\main\\java\\vrp\\AcoEngine.java",
+      "source_location": "L79",
+      "weight": 1.0
+    },
+    {
+      "source": "acoengine_acoengine_constructsolution",
+      "target": "bloomfilter_bloomfilter_add",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src\\main\\java\\vrp\\AcoEngine.java",
+      "source_location": "L95",
+      "weight": 1.0
+    },
+    {
+      "source": "acoengine_acoengine_selectnext",
+      "target": "vrpproblem_vrpproblem_size",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src\\main\\java\\vrp\\AcoEngine.java",
+      "source_location": "L119",
+      "weight": 1.0
+    },
+    {
+      "source": "acoengine_acoengine_updatepheromone",
+      "target": "vrpproblem_vrpproblem_size",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src\\main\\java\\vrp\\AcoEngine.java",
+      "source_location": "L145",
+      "weight": 1.0
+    },
+    {
+      "source": "acoengine_acoengine_updatepheromone",
+      "target": "vrpsolution_vrpsolution_calcdistance",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src\\main\\java\\vrp\\AcoEngine.java",
+      "source_location": "L151",
+      "weight": 1.0
+    },
+    {
+      "source": "acoengine_acoengine_depositpheromone",
+      "target": "vrpproblem_vrpproblem_size",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src\\main\\java\\vrp\\AcoEngine.java",
+      "source_location": "L162",
+      "weight": 1.0
+    },
+    {
+      "source": "acowithbloomfilter_acowithbloomfilter_acowithbloomfilter",
+      "target": "vrpproblem_vrpproblem_size",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src\\main\\java\\vrp\\AcoWithBloomFilter.java",
+      "source_location": "L21",
+      "weight": 1.0
+    },
+    {
+      "source": "acowithbloomfilter_acowithbloomfilter_acowithbloomfilter",
+      "target": "bloomfilter_bloomfilter_optimalbitsetsize",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src\\main\\java\\vrp\\AcoWithBloomFilter.java",
+      "source_location": "L22",
+      "weight": 1.0
+    },
+    {
+      "source": "acowithbloomfilter_acowithbloomfilter_acowithbloomfilter",
+      "target": "bloomfilter_bloomfilter_optimalnumhashes",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src\\main\\java\\vrp\\AcoWithBloomFilter.java",
+      "source_location": "L23",
+      "weight": 1.0
+    },
+    {
+      "source": "acowithbloomfilter_acowithbloomfilter_selectnext",
+      "target": "vrpproblem_vrpproblem_size",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src\\main\\java\\vrp\\AcoWithBloomFilter.java",
+      "source_location": "L36",
+      "weight": 1.0
+    },
+    {
+      "source": "acowithbloomfilter_acowithbloomfilter_selectnext",
+      "target": "bloomfilter_bloomfilter_mightcontain",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src\\main\\java\\vrp\\AcoWithBloomFilter.java",
+      "source_location": "L46",
+      "weight": 1.0
+    },
+    {
+      "source": "acowithbloomfilter_acowithbloomfilter_updatepheromone",
+      "target": "bloomfilter_bloomfilter_clear",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src\\main\\java\\vrp\\AcoWithBloomFilter.java",
+      "source_location": "L66",
+      "weight": 1.0
+    },
+    {
+      "source": "acowithbloomfilter_acowithbloomfilter_updatepheromone",
+      "target": "vrpproblem_vrpproblem_size",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src\\main\\java\\vrp\\AcoWithBloomFilter.java",
+      "source_location": "L70",
+      "weight": 1.0
+    },
+    {
+      "source": "acowithbloomfilter_acowithbloomfilter_updatepheromone",
+      "target": "vrpsolution_vrpsolution_calcdistance",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src\\main\\java\\vrp\\AcoWithBloomFilter.java",
+      "source_location": "L79",
+      "weight": 1.0
+    },
+    {
+      "source": "acowithbloomfilter_acowithbloomfilter_updatepheromone",
+      "target": "acoengine_acoengine_depositpheromone",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src\\main\\java\\vrp\\AcoWithBloomFilter.java",
+      "source_location": "L81",
+      "weight": 1.0
+    },
+    {
+      "source": "acowithbloomfilter_acowithbloomfilter_updatepheromone",
+      "target": "bloomfilter_bloomfilter_add",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src\\main\\java\\vrp\\AcoWithBloomFilter.java",
+      "source_location": "L84",
+      "weight": 1.0
+    },
+    {
+      "source": "acowithbloomfilter_acowithbloomfilter_updatepheromone",
+      "target": "bloomfilter_bloomfilter_decay",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src\\main\\java\\vrp\\AcoWithBloomFilter.java",
+      "source_location": "L90",
+      "weight": 1.0
+    },
+    {
+      "source": "acowithbloomfilter_acowithbloomfilter_solve",
+      "target": "bloomfilter_bloomfilter_add",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src\\main\\java\\vrp\\AcoWithBloomFilter.java",
+      "source_location": "L118",
+      "weight": 1.0
+    },
+    {
+      "source": "acowithbloomfilter_acowithbloomfilter_solve",
+      "target": "vrpsolution_vrpsolution_calcdistance",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src\\main\\java\\vrp\\AcoWithBloomFilter.java",
+      "source_location": "L119",
+      "weight": 1.0
+    },
+    {
+      "source": "acowithbloomfilter_acowithbloomfilter_constructsolution",
+      "target": "localsearch_localsearch_applytwoopt",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src\\main\\java\\vrp\\AcoWithBloomFilter.java",
+      "source_location": "L135",
+      "weight": 1.0
+    },
+    {
+      "source": "acowithlocalsearch_acowithlocalsearch_constructsolution",
+      "target": "localsearch_localsearch_applytabu",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src\\main\\java\\vrp\\AcoWithLocalSearch.java",
+      "source_location": "L20",
+      "weight": 1.0
+    },
+    {
+      "source": "acowithlocalsearch_acowithlocalsearch_constructsolution",
+      "target": "localsearch_localsearch_applytwoopt",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src\\main\\java\\vrp\\AcoWithLocalSearch.java",
+      "source_location": "L21",
+      "weight": 1.0
+    },
+    {
+      "source": "benchmarkrunner_benchmarkrunner_main",
+      "target": "randomvrpgenerator_randomvrpgenerator_generate",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src\\main\\java\\vrp\\BenchmarkRunner.java",
+      "source_location": "L15",
+      "weight": 1.0
+    },
+    {
+      "source": "benchmarkrunner_benchmarkrunner_main",
+      "target": "mmaswithbloomfilter_mmaswithbloomfilter_solve",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src\\main\\java\\vrp\\BenchmarkRunner.java",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "benchmarkrunner_benchmarkrunner_run",
+      "target": "mmaswithbloomfilter_mmaswithbloomfilter_solve",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src\\main\\java\\vrp\\BenchmarkRunner.java",
+      "source_location": "L49",
+      "weight": 1.0
+    },
+    {
+      "source": "bloomfilter_bloomfilter_add",
+      "target": "visitkey_visitkey_gethashes",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src\\main\\java\\vrp\\BloomFilter.java",
+      "source_location": "L17",
+      "weight": 1.0
+    },
+    {
+      "source": "bloomfilter_bloomfilter_mightcontain",
+      "target": "visitkey_visitkey_gethashes",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src\\main\\java\\vrp\\BloomFilter.java",
+      "source_location": "L22",
+      "weight": 1.0
+    },
+    {
+      "source": "localsearch_localsearch_twoopt",
+      "target": "vrpproblem_vrpproblem_size",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src\\main\\java\\vrp\\LocalSearch.java",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "localsearch_localsearch_twooptswap",
+      "target": "vrpproblem_vrpproblem_size",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src\\main\\java\\vrp\\LocalSearch.java",
+      "source_location": "L38",
+      "weight": 1.0
+    },
+    {
+      "source": "localsearch_localsearch_tabu",
+      "target": "vrpproblem_vrpproblem_size",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src\\main\\java\\vrp\\LocalSearch.java",
+      "source_location": "L56",
+      "weight": 1.0
+    },
+    {
+      "source": "localsearch_localsearch_tabu",
+      "target": "bloomfilter_bloomfilter_add",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src\\main\\java\\vrp\\LocalSearch.java",
+      "source_location": "L93",
+      "weight": 1.0
+    },
+    {
+      "source": "localsearch_localsearch_routedist",
+      "target": "vrpproblem_vrpproblem_size",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src\\main\\java\\vrp\\LocalSearch.java",
+      "source_location": "L108",
+      "weight": 1.0
+    },
+    {
+      "source": "localsearch_localsearch_applytwoopt",
+      "target": "bloomfilter_bloomfilter_add",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src\\main\\java\\vrp\\LocalSearch.java",
+      "source_location": "L117",
+      "weight": 1.0
+    },
+    {
+      "source": "localsearch_localsearch_applytwoopt",
+      "target": "vrpproblem_vrpproblem_size",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src\\main\\java\\vrp\\LocalSearch.java",
+      "source_location": "L117",
+      "weight": 1.0
+    },
+    {
+      "source": "localsearch_localsearch_applytabu",
+      "target": "vrpproblem_vrpproblem_size",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src\\main\\java\\vrp\\LocalSearch.java",
+      "source_location": "L124",
+      "weight": 1.0
+    },
+    {
+      "source": "localsearch_localsearch_applytabu",
+      "target": "bloomfilter_bloomfilter_add",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src\\main\\java\\vrp\\LocalSearch.java",
+      "source_location": "L125",
+      "weight": 1.0
+    },
+    {
+      "source": "mmasengine_mmasengine_mmasengine",
+      "target": "vrpproblem_vrpproblem_size",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src\\main\\java\\vrp\\MmasEngine.java",
+      "source_location": "L18",
+      "weight": 1.0
+    },
+    {
+      "source": "mmasengine_mmasengine_branchingfactor",
+      "target": "vrpproblem_vrpproblem_size",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src\\main\\java\\vrp\\MmasEngine.java",
+      "source_location": "L41",
+      "weight": 1.0
+    },
+    {
+      "source": "mmasengine_mmasengine_solve",
+      "target": "vrpproblem_vrpproblem_size",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src\\main\\java\\vrp\\MmasEngine.java",
+      "source_location": "L55",
+      "weight": 1.0
+    },
+    {
+      "source": "mmasengine_mmasengine_solve",
+      "target": "acowithlocalsearch_acowithlocalsearch_constructsolution",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src\\main\\java\\vrp\\MmasEngine.java",
+      "source_location": "L60",
+      "weight": 1.0
+    },
+    {
+      "source": "mmasengine_mmasengine_solve",
+      "target": "vrpsolution_vrpsolution_calcdistance",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src\\main\\java\\vrp\\MmasEngine.java",
+      "source_location": "L61",
+      "weight": 1.0
+    },
+    {
+      "source": "mmasengine_mmasengine_solve",
+      "target": "acoengine_acoengine_depositpheromone",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src\\main\\java\\vrp\\MmasEngine.java",
+      "source_location": "L79",
+      "weight": 1.0
+    },
+    {
+      "source": "mmaswithbloomfilter_mmaswithbloomfilter_mmaswithbloomfilter",
+      "target": "vrpproblem_vrpproblem_size",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src\\main\\java\\vrp\\MmasWithBloomFilter.java",
+      "source_location": "L19",
+      "weight": 1.0
+    },
+    {
+      "source": "mmaswithbloomfilter_mmaswithbloomfilter_mmaswithbloomfilter",
+      "target": "bloomfilter_bloomfilter_optimalbitsetsize",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src\\main\\java\\vrp\\MmasWithBloomFilter.java",
+      "source_location": "L20",
+      "weight": 1.0
+    },
+    {
+      "source": "mmaswithbloomfilter_mmaswithbloomfilter_mmaswithbloomfilter",
+      "target": "bloomfilter_bloomfilter_optimalnumhashes",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src\\main\\java\\vrp\\MmasWithBloomFilter.java",
+      "source_location": "L21",
+      "weight": 1.0
+    },
+    {
+      "source": "mmaswithbloomfilter_mmaswithbloomfilter_selectnext",
+      "target": "vrpproblem_vrpproblem_size",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src\\main\\java\\vrp\\MmasWithBloomFilter.java",
+      "source_location": "L33",
+      "weight": 1.0
+    },
+    {
+      "source": "mmaswithbloomfilter_mmaswithbloomfilter_selectnext",
+      "target": "bloomfilter_bloomfilter_mightcontain",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src\\main\\java\\vrp\\MmasWithBloomFilter.java",
+      "source_location": "L42",
+      "weight": 1.0
+    },
+    {
+      "source": "mmaswithbloomfilter_mmaswithbloomfilter_solve",
+      "target": "vrpproblem_vrpproblem_size",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src\\main\\java\\vrp\\MmasWithBloomFilter.java",
+      "source_location": "L59",
+      "weight": 1.0
+    },
+    {
+      "source": "mmaswithbloomfilter_mmaswithbloomfilter_solve",
+      "target": "bloomfilter_bloomfilter_clear",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src\\main\\java\\vrp\\MmasWithBloomFilter.java",
+      "source_location": "L64",
+      "weight": 1.0
+    },
+    {
+      "source": "mmaswithbloomfilter_mmaswithbloomfilter_solve",
+      "target": "acowithlocalsearch_acowithlocalsearch_constructsolution",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src\\main\\java\\vrp\\MmasWithBloomFilter.java",
+      "source_location": "L71",
+      "weight": 1.0
+    },
+    {
+      "source": "mmaswithbloomfilter_mmaswithbloomfilter_solve",
+      "target": "vrpsolution_vrpsolution_calcdistance",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src\\main\\java\\vrp\\MmasWithBloomFilter.java",
+      "source_location": "L72",
+      "weight": 1.0
+    },
+    {
+      "source": "mmaswithbloomfilter_mmaswithbloomfilter_solve",
+      "target": "bloomfilter_bloomfilter_add",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src\\main\\java\\vrp\\MmasWithBloomFilter.java",
+      "source_location": "L73",
+      "weight": 1.0
+    },
+    {
+      "source": "mmaswithbloomfilter_mmaswithbloomfilter_solve",
+      "target": "mmasengine_mmasengine_computetmin",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src\\main\\java\\vrp\\MmasWithBloomFilter.java",
+      "source_location": "L91",
+      "weight": 1.0
+    },
+    {
+      "source": "mmaswithbloomfilter_mmaswithbloomfilter_solve",
+      "target": "mmasengine_mmasengine_useglobalbest",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src\\main\\java\\vrp\\MmasWithBloomFilter.java",
+      "source_location": "L95",
+      "weight": 1.0
+    },
+    {
+      "source": "mmaswithbloomfilter_mmaswithbloomfilter_solve",
+      "target": "acoengine_acoengine_depositpheromone",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src\\main\\java\\vrp\\MmasWithBloomFilter.java",
+      "source_location": "L96",
+      "weight": 1.0
+    },
+    {
+      "source": "mmaswithbloomfilter_mmaswithbloomfilter_solve",
+      "target": "mmasengine_mmasengine_branchingfactor",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src\\main\\java\\vrp\\MmasWithBloomFilter.java",
+      "source_location": "L104",
+      "weight": 1.0
+    },
+    {
+      "source": "mmaswithbloomfilter_mmaswithbloomfilter_solve",
+      "target": "bloomfilter_bloomfilter_decay",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src\\main\\java\\vrp\\MmasWithBloomFilter.java",
+      "source_location": "L110",
+      "weight": 1.0
+    },
+    {
+      "source": "randomvrpgenerator_randomvrpgenerator_generate",
+      "target": "bloomfilter_bloomfilter_add",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src\\main\\java\\vrp\\RandomVrpGenerator.java",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "vrpproblem_vrpproblem_vrpproblem",
+      "target": "node_node_distanceto",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src\\main\\java\\vrp\\VrpProblem.java",
+      "source_location": "L17",
+      "weight": 1.0
+    },
+    {
+      "source": "vrpsolution_vrpsolution_calcdistance",
+      "target": "vrpproblem_vrpproblem_size",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src\\main\\java\\vrp\\VrpSolution.java",
+      "source_location": "L19",
+      "weight": 1.0
+    }
+  ],
+  "input_tokens": 0,
+  "output_tokens": 0
+}

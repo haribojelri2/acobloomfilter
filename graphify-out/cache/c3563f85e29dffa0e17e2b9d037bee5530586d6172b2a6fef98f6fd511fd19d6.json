@@ -1,0 +1,1 @@
+{"nodes": [{"id": "VisitKey_class", "label": "VisitKey Class", "file_type": "code", "source_file": "src/main/java/vrp/VisitKey.java"}], "edges": [{"source": "VisitKey_class", "target": "Hashable_interface", "relation": "implements", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "src/main/java/vrp/VisitKey.java", "weight": 1.0}], "hyperedges": []}
