@@ -19,10 +19,9 @@ color: green
 - 설계 원칙 준수 여부
 
 ## 작업 순서
-1. `.ai-collab/shared_context.md`에서 리뷰 대상 파악
-2. 해당 파일들 읽기
-3. 검토 결과를 `.ai-collab/inbox_antigravity.md`에 작성
-4. `.ai-collab/conversation_log.md`에 리뷰 요약 기록
+1. 검토 대상 파일 읽기
+2. 항목별 검토 수행
+3. 결과 보고
 
 ## 출력 형식
 ```
