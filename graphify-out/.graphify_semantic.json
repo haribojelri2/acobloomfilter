@@ -1,0 +1,2610 @@
+{
+  "nodes": [
+    {
+      "id": "AcoEngine_class",
+      "label": "AcoEngine Class",
+      "file_type": "code",
+      "source_file": "src/main/java/vrp/AcoEngine.java"
+    },
+    {
+      "id": "MmasEngine_class",
+      "label": "MmasEngine Class",
+      "file_type": "code",
+      "source_file": "src/main/java/vrp/MmasEngine.java"
+    },
+    {
+      "id": "MmasWithBloomFilter_class",
+      "label": "MmasWithBloomFilter Class",
+      "file_type": "code",
+      "source_file": "src/main/java/vrp/MmasWithBloomFilter.java"
+    },
+    {
+      "id": "AcoWithBloomFilter_class",
+      "label": "AcoWithBloomFilter Class",
+      "file_type": "code",
+      "source_file": "src/main/java/vrp/AcoWithBloomFilter.java"
+    },
+    {
+      "id": "AcoWithLocalSearch_class",
+      "label": "AcoWithLocalSearch Class",
+      "file_type": "code",
+      "source_file": "src/main/java/vrp/AcoWithLocalSearch.java"
+    },
+    {
+      "id": "LocalSearch_class",
+      "label": "LocalSearch Utility Class",
+      "file_type": "code",
+      "source_file": "src/main/java/vrp/LocalSearch.java"
+    },
+    {
+      "id": "LocalSearch_twoOpt",
+      "label": "twoOpt Method",
+      "file_type": "code",
+      "source_file": "src/main/java/vrp/LocalSearch.java"
+    },
+    {
+      "id": "LocalSearch_tabu",
+      "label": "tabu Method",
+      "file_type": "code",
+      "source_file": "src/main/java/vrp/LocalSearch.java"
+    },
+    {
+      "id": "BenchmarkRunner_class",
+      "label": "BenchmarkRunner Class",
+      "file_type": "code",
+      "source_file": "src/main/java/vrp/BenchmarkRunner.java"
+    },
+    {
+      "id": "BloomFilter_class",
+      "label": "BloomFilter Class",
+      "file_type": "code",
+      "source_file": "src/main/java/vrp/BloomFilter.java"
+    },
+    {
+      "id": "BloomFilter_mightContain",
+      "label": "mightContain Method",
+      "file_type": "code",
+      "source_file": "src/main/java/vrp/BloomFilter.java"
+    },
+    {
+      "id": "BloomFilter_decay",
+      "label": "decay Method",
+      "file_type": "code",
+      "source_file": "src/main/java/vrp/BloomFilter.java"
+    },
+    {
+      "id": "VrpProblem_class",
+      "label": "VrpProblem Class",
+      "file_type": "code",
+      "source_file": "src/main/java/vrp/VrpProblem.java"
+    },
+    {
+      "id": "VrpSolution_class",
+      "label": "VrpSolution Class",
+      "file_type": "code",
+      "source_file": "src/main/java/vrp/VrpSolution.java"
+    },
+    {
+      "id": "VrpSolution_calcDistance",
+      "label": "calcDistance Method",
+      "file_type": "code",
+      "source_file": "src/main/java/vrp/VrpSolution.java"
+    },
+    {
+      "id": "Node_class",
+      "label": "Node Class",
+      "file_type": "code",
+      "source_file": "src/main/java/vrp/Node.java"
+    },
+    {
+      "id": "RandomVrpGenerator_class",
+      "label": "RandomVrpGenerator Class",
+      "file_type": "code",
+      "source_file": "src/main/java/vrp/RandomVrpGenerator.java"
+    },
+    {
+      "id": "LoadContextKey_class",
+      "label": "LoadContextKey Class",
+      "file_type": "code",
+      "source_file": "src/main/java/vrp/LoadContextKey.java"
+    },
+    {
+      "id": "Hashable_interface",
+      "label": "Hashable Interface",
+      "file_type": "code",
+      "source_file": "src/main/java/vrp/Hashable.java"
+    },
+    {
+      "id": "EdgeKey_class",
+      "label": "EdgeKey Class",
+      "file_type": "code",
+      "source_file": "src/main/java/vrp/EdgeKey.java"
+    },
+    {
+      "id": "PathKey_class",
+      "label": "PathKey Class",
+      "file_type": "code",
+      "source_file": "src/main/java/vrp/PathKey.java"
+    },
+    {
+      "id": "VisitKey_class",
+      "label": "VisitKey Class",
+      "file_type": "code",
+      "source_file": "src/main/java/vrp/VisitKey.java"
+    },
+    {
+      "id": "claude_md_project_config",
+      "label": "CLAUDE.md Project Configuration",
+      "file_type": "document",
+      "source_file": "CLAUDE.md"
+    },
+    {
+      "id": "claude_md_implementer_role",
+      "label": "Claude Code Implementer Role",
+      "file_type": "concept",
+      "source_file": "CLAUDE.md"
+    },
+    {
+      "id": "claude_md_advisor_hook",
+      "label": "Advisor Pre/Post Review Hook",
+      "file_type": "concept",
+      "source_file": "CLAUDE.md"
+    },
+    {
+      "id": "claude_md_graphify_plugin",
+      "label": "Graphify Knowledge Graph Plugin",
+      "file_type": "concept",
+      "source_file": "CLAUDE.md"
+    },
+    {
+      "id": "claude_md_src_dir",
+      "label": "src/ Java Source Directory",
+      "file_type": "concept",
+      "source_file": "CLAUDE.md"
+    },
+    {
+      "id": "claude_md_out_dir",
+      "label": "out/ Build Output Directory",
+      "file_type": "concept",
+      "source_file": "CLAUDE.md"
+    },
+    {
+      "id": "claude_md_paper_verifier_agent",
+      "label": "paper-verifier Agent",
+      "file_type": "concept",
+      "source_file": "CLAUDE.md"
+    },
+    {
+      "id": "claude_md_security_guidance_hook",
+      "label": "security-guidance Hook",
+      "file_type": "concept",
+      "source_file": "CLAUDE.md"
+    },
+    {
+      "id": "readme_ant_system_paper",
+      "label": "Ant System Paper (Dorigo 1996)",
+      "file_type": "paper_reference",
+      "source_file": "papers/README.md"
+    },
+    {
+      "id": "readme_mmas_paper",
+      "label": "MAX-MIN Ant System Paper (St\u00fctzle & Hoos 2000)",
+      "file_type": "paper_reference",
+      "source_file": "papers/README.md"
+    },
+    {
+      "id": "readme_two_opt_paper",
+      "label": "2-opt Paper (Lin 1965 / Croes 1958)",
+      "file_type": "paper_reference",
+      "source_file": "papers/README.md"
+    },
+    {
+      "id": "readme_tabu_search_paper",
+      "label": "Tabu Search Paper (Glover 1986/1989/1990)",
+      "file_type": "paper_reference",
+      "source_file": "papers/README.md"
+    },
+    {
+      "id": "readme_bloom_filter_paper",
+      "label": "Bloom Filter Paper (Bloom 1970)",
+      "file_type": "paper_reference",
+      "source_file": "papers/README.md"
+    },
+    {
+      "id": "readme_aco_vrp_related",
+      "label": "ACO-VRP Related Papers",
+      "file_type": "paper_reference",
+      "source_file": "papers/README.md"
+    },
+    {
+      "id": "readme_AcoEngine_class",
+      "label": "AcoEngine Java Class",
+      "file_type": "concept",
+      "source_file": "papers/README.md"
+    },
+    {
+      "id": "readme_MmasEngine_class",
+      "label": "MmasEngine Java Class",
+      "file_type": "concept",
+      "source_file": "papers/README.md"
+    },
+    {
+      "id": "readme_MmasWithBloomFilter_class",
+      "label": "MmasWithBloomFilter Java Class",
+      "file_type": "concept",
+      "source_file": "papers/README.md"
+    },
+    {
+      "id": "readme_AcoWithBloomFilter_class",
+      "label": "AcoWithBloomFilter Java Class",
+      "file_type": "concept",
+      "source_file": "papers/README.md"
+    },
+    {
+      "id": "readme_LocalSearch_class",
+      "label": "LocalSearch Java Class",
+      "file_type": "concept",
+      "source_file": "papers/README.md"
+    },
+    {
+      "id": "readme_novel_contribution",
+      "label": "Novel ACO+Bloom Filter Soft Penalty Contribution",
+      "file_type": "concept",
+      "source_file": "papers/README.md"
+    },
+    {
+      "id": "readme_load_context_key",
+      "label": "LoadContextKey(prev, cur, load_bucket, capacity)",
+      "file_type": "concept",
+      "source_file": "papers/README.md"
+    },
+    {
+      "id": "readme_mmas_stagnation_bf_activation",
+      "label": "MMAS Stagnation-Triggered BF Activation",
+      "file_type": "concept",
+      "source_file": "papers/README.md"
+    },
+    {
+      "id": "as1996_paper",
+      "label": "Ant System Paper (Dorigo, Maniezzo, Colorni 1996)",
+      "file_type": "paper",
+      "source_file": "papers/01_ant_system_dorigo_1996.md"
+    },
+    {
+      "id": "as1996_dorigo",
+      "label": "Dorigo, M.",
+      "file_type": "author",
+      "source_file": "papers/01_ant_system_dorigo_1996.md"
+    },
+    {
+      "id": "as1996_maniezzo",
+      "label": "Maniezzo, V.",
+      "file_type": "author",
+      "source_file": "papers/01_ant_system_dorigo_1996.md"
+    },
+    {
+      "id": "as1996_colorni",
+      "label": "Colorni, A.",
+      "file_type": "author",
+      "source_file": "papers/01_ant_system_dorigo_1996.md"
+    },
+    {
+      "id": "as1996_pheromone_init",
+      "label": "Pheromone Initialization \u03c4\u2080 = m / C_nn",
+      "file_type": "formula",
+      "source_file": "papers/01_ant_system_dorigo_1996.md"
+    },
+    {
+      "id": "as1996_transition_rule",
+      "label": "Transition Rule p(i\u2192j) = [\u03c4^\u03b1 \u00b7 \u03b7^\u03b2] / \u03a3[\u03c4^\u03b1 \u00b7 \u03b7^\u03b2]",
+      "file_type": "formula",
+      "source_file": "papers/01_ant_system_dorigo_1996.md"
+    },
+    {
+      "id": "as1996_pheromone_update",
+      "label": "Pheromone Update \u03c4 \u2190 (1-\u03c1)\u00b7\u03c4 + \u03a3 \u0394\u03c4_k",
+      "file_type": "formula",
+      "source_file": "papers/01_ant_system_dorigo_1996.md"
+    },
+    {
+      "id": "as1996_heuristic_visibility",
+      "label": "Heuristic Visibility \u03b7(i,j) = 1/d(i,j)",
+      "file_type": "formula",
+      "source_file": "papers/01_ant_system_dorigo_1996.md"
+    },
+    {
+      "id": "as1996_alpha_param",
+      "label": "\u03b1: pheromone weight (recommended: 1)",
+      "file_type": "parameter",
+      "source_file": "papers/01_ant_system_dorigo_1996.md"
+    },
+    {
+      "id": "as1996_beta_param",
+      "label": "\u03b2: heuristic weight (recommended: 2\u20135)",
+      "file_type": "parameter",
+      "source_file": "papers/01_ant_system_dorigo_1996.md"
+    },
+    {
+      "id": "as1996_rho_param",
+      "label": "\u03c1: evaporation rate (recommended: 0.5)",
+      "file_type": "parameter",
+      "source_file": "papers/01_ant_system_dorigo_1996.md"
+    },
+    {
+      "id": "as1996_Q_param",
+      "label": "Q: pheromone deposit constant",
+      "file_type": "parameter",
+      "source_file": "papers/01_ant_system_dorigo_1996.md"
+    },
+    {
+      "id": "as1996_nearest_neighbor_heuristic",
+      "label": "Nearest-Neighbor Heuristic Tour C_nn",
+      "file_type": "concept",
+      "source_file": "papers/01_ant_system_dorigo_1996.md"
+    },
+    {
+      "id": "as1996_ant_colony",
+      "label": "Ant Colony (cooperating agents)",
+      "file_type": "concept",
+      "source_file": "papers/01_ant_system_dorigo_1996.md"
+    },
+    {
+      "id": "mmas2000_paper",
+      "label": "MAX-MIN Ant System Paper (St\u00fctzle & Hoos 2000)",
+      "file_type": "paper",
+      "source_file": "papers/02_mmas_stutzle_hoos_2000.md"
+    },
+    {
+      "id": "mmas2000_stutzle",
+      "label": "St\u00fctzle, T.",
+      "file_type": "author",
+      "source_file": "papers/02_mmas_stutzle_hoos_2000.md"
+    },
+    {
+      "id": "mmas2000_hoos",
+      "label": "Hoos, H. H.",
+      "file_type": "author",
+      "source_file": "papers/02_mmas_stutzle_hoos_2000.md"
+    },
+    {
+      "id": "mmas2000_tmax_formula",
+      "label": "\u03c4_max = 1 / (\u03c1 \u00b7 C_best)",
+      "file_type": "formula",
+      "source_file": "papers/02_mmas_stutzle_hoos_2000.md"
+    },
+    {
+      "id": "mmas2000_tmin_formula",
+      "label": "\u03c4_min = \u03c4_max \u00b7 (1 - p_best^(1/n)) / ((n/2-1) \u00b7 p_best^(1/n))",
+      "file_type": "formula",
+      "source_file": "papers/02_mmas_stutzle_hoos_2000.md"
+    },
+    {
+      "id": "mmas2000_pheromone_clipping",
+      "label": "Pheromone Clipping \u03c4_min \u2264 \u03c4(i,j) \u2264 \u03c4_max",
+      "file_type": "concept",
+      "source_file": "papers/02_mmas_stutzle_hoos_2000.md"
+    },
+    {
+      "id": "mmas2000_single_ant_update",
+      "label": "Single Ant Pheromone Deposit per Iteration",
+      "file_type": "concept",
+      "source_file": "papers/02_mmas_stutzle_hoos_2000.md"
+    },
+    {
+      "id": "mmas2000_fgb_schedule",
+      "label": "f_gb Schedule: Iteration-Best to Global-Best Transition",
+      "file_type": "concept",
+      "source_file": "papers/02_mmas_stutzle_hoos_2000.md"
+    },
+    {
+      "id": "mmas2000_lambda_branching",
+      "label": "\u03bb-Branching Factor Stagnation Detection",
+      "file_type": "formula",
+      "source_file": "papers/02_mmas_stutzle_hoos_2000.md"
+    },
+    {
+      "id": "mmas2000_stagnation_reinit",
+      "label": "Stagnation Detection: Pheromone Reinitialization to \u03c4_max",
+      "file_type": "concept",
+      "source_file": "papers/02_mmas_stutzle_hoos_2000.md"
+    },
+    {
+      "id": "mmas2000_pbest_param",
+      "label": "p_best: probability best solution constructed (recommended: 0.05)",
+      "file_type": "parameter",
+      "source_file": "papers/02_mmas_stutzle_hoos_2000.md"
+    },
+    {
+      "id": "mmas2000_lambda_param",
+      "label": "\u03bb = 0.05 (branching factor threshold)",
+      "file_type": "parameter",
+      "source_file": "papers/02_mmas_stutzle_hoos_2000.md"
+    },
+    {
+      "id": "mmas2000_branching_threshold",
+      "label": "BRANCHING_THRESHOLD = 2.0",
+      "file_type": "parameter",
+      "source_file": "papers/02_mmas_stutzle_hoos_2000.md"
+    },
+    {
+      "id": "mmas2000_tmax_init",
+      "label": "MMAS Initialization: All \u03c4(i,j) = \u03c4_max",
+      "file_type": "concept",
+      "source_file": "papers/02_mmas_stutzle_hoos_2000.md"
+    },
+    {
+      "id": "twoopt1965_paper",
+      "label": "2-opt Paper (Lin 1965)",
+      "file_type": "paper",
+      "source_file": "papers/03_two_opt_lin_1965.md"
+    },
+    {
+      "id": "twoopt1965_lin",
+      "label": "Lin, S.",
+      "file_type": "author",
+      "source_file": "papers/03_two_opt_lin_1965.md"
+    },
+    {
+      "id": "twoopt1958_croes_paper",
+      "label": "2-opt Independent Discovery (Croes 1958)",
+      "file_type": "paper",
+      "source_file": "papers/03_two_opt_lin_1965.md"
+    },
+    {
+      "id": "twoopt1958_croes",
+      "label": "Croes, G. A.",
+      "file_type": "author",
+      "source_file": "papers/03_two_opt_lin_1965.md"
+    },
+    {
+      "id": "twoopt_move",
+      "label": "2-opt Move: Remove (a,b),(c,d) and Add (a,c),(b,d)",
+      "file_type": "concept",
+      "source_file": "papers/03_two_opt_lin_1965.md"
+    },
+    {
+      "id": "twoopt_improvement_condition",
+      "label": "Improvement Condition: d(a,b)+d(c,d) > d(a,c)+d(b,d)",
+      "file_type": "formula",
+      "source_file": "papers/03_two_opt_lin_1965.md"
+    },
+    {
+      "id": "twoopt_segment_reversal",
+      "label": "Segment Reversal [b,...,c]",
+      "file_type": "concept",
+      "source_file": "papers/03_two_opt_lin_1965.md"
+    },
+    {
+      "id": "twoopt_complexity",
+      "label": "2-opt Complexity: O(n\u00b2) per pass",
+      "file_type": "concept",
+      "source_file": "papers/03_two_opt_lin_1965.md"
+    },
+    {
+      "id": "twoopt_intra_route",
+      "label": "Intra-Route Optimization for VRP",
+      "file_type": "concept",
+      "source_file": "papers/03_two_opt_lin_1965.md"
+    },
+    {
+      "id": "twoopt_local_optimum",
+      "label": "2-opt Local Optimum Convergence",
+      "file_type": "concept",
+      "source_file": "papers/03_two_opt_lin_1965.md"
+    },
+    {
+      "id": "tabu1989_paper",
+      "label": "Tabu Search Paper (Glover 1989)",
+      "file_type": "paper",
+      "source_file": "papers/04_tabu_search_glover_1989.md"
+    },
+    {
+      "id": "tabu1986_paper",
+      "label": "Tabu Search Precursor (Glover 1986)",
+      "file_type": "paper",
+      "source_file": "papers/04_tabu_search_glover_1989.md"
+    },
+    {
+      "id": "tabu1990_paper",
+      "label": "Tabu Search Part II (Glover 1990)",
+      "file_type": "paper",
+      "source_file": "papers/04_tabu_search_glover_1989.md"
+    },
+    {
+      "id": "tabu_glover",
+      "label": "Glover, F.",
+      "file_type": "author",
+      "source_file": "papers/04_tabu_search_glover_1989.md"
+    },
+    {
+      "id": "tabu_core_mechanism",
+      "label": "Tabu Search Core: Neighborhood N(s) + Tabu List",
+      "file_type": "concept",
+      "source_file": "papers/04_tabu_search_glover_1989.md"
+    },
+    {
+      "id": "tabu_list",
+      "label": "Tabu List: FIFO node-swap pairs (i,j)",
+      "file_type": "concept",
+      "source_file": "papers/04_tabu_search_glover_1989.md"
+    },
+    {
+      "id": "tabu_aspiration_criterion",
+      "label": "Aspiration Criterion: Override tabu if better than best-so-far",
+      "file_type": "concept",
+      "source_file": "papers/04_tabu_search_glover_1989.md"
+    },
+    {
+      "id": "tabu_dynamic_tenure",
+      "label": "Dynamic Tenure: max(5, route_size/3)",
+      "file_type": "formula",
+      "source_file": "papers/04_tabu_search_glover_1989.md"
+    },
+    {
+      "id": "tabu_max_iter",
+      "label": "Tabu maxIter = 50",
+      "file_type": "parameter",
+      "source_file": "papers/04_tabu_search_glover_1989.md"
+    },
+    {
+      "id": "tabu_fifo_eviction",
+      "label": "FIFO Eviction for Tabu List (LinkedHashSet)",
+      "file_type": "concept",
+      "source_file": "papers/04_tabu_search_glover_1989.md"
+    },
+    {
+      "id": "bloom1970_paper",
+      "label": "Bloom Filter Paper (Bloom 1970)",
+      "file_type": "paper",
+      "source_file": "papers/05_bloom_filter_bloom_1970.md"
+    },
+    {
+      "id": "bloom1970_bloom",
+      "label": "Bloom, B. H.",
+      "file_type": "author",
+      "source_file": "papers/05_bloom_filter_bloom_1970.md"
+    },
+    {
+      "id": "bloom1970_bit_array",
+      "label": "Bloom Filter Bit Array (m bits, initialized to 0)",
+      "file_type": "concept",
+      "source_file": "papers/05_bloom_filter_bloom_1970.md"
+    },
+    {
+      "id": "bloom1970_hash_functions",
+      "label": "k Independent Hash Functions h\u2081,...,h\u2096",
+      "file_type": "concept",
+      "source_file": "papers/05_bloom_filter_bloom_1970.md"
+    },
+    {
+      "id": "bloom1970_add_operation",
+      "label": "Add(x): Set bit[h\u1d62(x)]=1 for each h\u1d62",
+      "file_type": "concept",
+      "source_file": "papers/05_bloom_filter_bloom_1970.md"
+    },
+    {
+      "id": "bloom1970_query_operation",
+      "label": "Query(x) mightContain: Check all k bits",
+      "file_type": "concept",
+      "source_file": "papers/05_bloom_filter_bloom_1970.md"
+    },
+    {
+      "id": "bloom1970_false_positive_rate",
+      "label": "False Positive Rate \u03b5 \u2248 (1 - e^(-kn/m))^k",
+      "file_type": "formula",
+      "source_file": "papers/05_bloom_filter_bloom_1970.md"
+    },
+    {
+      "id": "bloom1970_optimal_k",
+      "label": "Optimal k = (m/n) \u00b7 ln(2)",
+      "file_type": "formula",
+      "source_file": "papers/05_bloom_filter_bloom_1970.md"
+    },
+    {
+      "id": "bloom1970_optimal_m",
+      "label": "Optimal m = -n \u00b7 ln(\u03b5) / (ln(2))\u00b2",
+      "file_type": "formula",
+      "source_file": "papers/05_bloom_filter_bloom_1970.md"
+    },
+    {
+      "id": "bloom1970_no_false_negatives",
+      "label": "No False Negatives Property",
+      "file_type": "concept",
+      "source_file": "papers/05_bloom_filter_bloom_1970.md"
+    },
+    {
+      "id": "bloom1970_no_deletion",
+      "label": "No Deletion in Standard Bloom Filter",
+      "file_type": "concept",
+      "source_file": "papers/05_bloom_filter_bloom_1970.md"
+    },
+    {
+      "id": "bloom1970_space_efficiency",
+      "label": "Space Efficiency: ~9.6 bits/element at \u03b5=1%",
+      "file_type": "concept",
+      "source_file": "papers/05_bloom_filter_bloom_1970.md"
+    },
+    {
+      "id": "bloom1970_counting_variant",
+      "label": "Counting Bloom Filter / Decay Variant",
+      "file_type": "concept",
+      "source_file": "papers/05_bloom_filter_bloom_1970.md"
+    },
+    {
+      "id": "bloom1970_decay_operation",
+      "label": "bloomFilter.decay(BF_DECAY=0.95) \u2014 Soft Forgetting",
+      "file_type": "concept",
+      "source_file": "papers/05_bloom_filter_bloom_1970.md"
+    },
+    {
+      "id": "bloom1970_project_load_context_key",
+      "label": "Project Context Key: LoadContextKey(prev, cur, load_bucket, capacity)",
+      "file_type": "concept",
+      "source_file": "papers/05_bloom_filter_bloom_1970.md"
+    },
+    {
+      "id": "bloom1970_soft_penalty",
+      "label": "Soft Penalty \u00d70.15 for BF-flagged Candidates",
+      "file_type": "concept",
+      "source_file": "papers/05_bloom_filter_bloom_1970.md"
+    },
+    {
+      "id": "bloom1970_stagnation_window",
+      "label": "STAGNATION_WINDOW = 5 Iterations",
+      "file_type": "parameter",
+      "source_file": "papers/05_bloom_filter_bloom_1970.md"
+    },
+    {
+      "id": "bloom1970_novel_application",
+      "label": "Novel ACO+Bloom Filter VRP Application (No Prior Paper)",
+      "file_type": "concept",
+      "source_file": "papers/05_bloom_filter_bloom_1970.md"
+    },
+    {
+      "id": "acovrp_acs1997_paper",
+      "label": "Ant Colony System Paper (Dorigo & Gambardella 1997)",
+      "file_type": "paper",
+      "source_file": "papers/06_aco_vrp_related.md"
+    },
+    {
+      "id": "acovrp_gambardella",
+      "label": "Gambardella, L. M.",
+      "file_type": "author",
+      "source_file": "papers/06_aco_vrp_related.md"
+    },
+    {
+      "id": "acovrp_acs_pseudo_random_rule",
+      "label": "ACS Pseudo-Random Proportional Rule (Exploitation vs Exploration)",
+      "file_type": "concept",
+      "source_file": "papers/06_aco_vrp_related.md"
+    },
+    {
+      "id": "acovrp_acs_local_pheromone_update",
+      "label": "ACS Local Pheromone Update (During Construction)",
+      "file_type": "concept",
+      "source_file": "papers/06_aco_vrp_related.md"
+    },
+    {
+      "id": "acovrp_acs_global_update_best_ant",
+      "label": "ACS Global Update Only by Best Ant",
+      "file_type": "concept",
+      "source_file": "papers/06_aco_vrp_related.md"
+    },
+    {
+      "id": "acovrp_macs_vrptw_paper",
+      "label": "MACS-VRPTW Paper (Gambardella, Taillard, Agarwal 1999)",
+      "file_type": "paper",
+      "source_file": "papers/06_aco_vrp_related.md"
+    },
+    {
+      "id": "acovrp_taillard",
+      "label": "Taillard, E. D.",
+      "file_type": "author",
+      "source_file": "papers/06_aco_vrp_related.md"
+    },
+    {
+      "id": "acovrp_bell_mcmullen_2004_paper",
+      "label": "Bell & McMullen 2004 ACO-VRP Paper",
+      "file_type": "paper",
+      "source_file": "papers/06_aco_vrp_related.md"
+    },
+    {
+      "id": "acovrp_bell",
+      "label": "Bell, J. E.",
+      "file_type": "author",
+      "source_file": "papers/06_aco_vrp_related.md"
+    },
+    {
+      "id": "acovrp_mcmullen",
+      "label": "McMullen, P. R.",
+      "file_type": "author",
+      "source_file": "papers/06_aco_vrp_related.md"
+    },
+    {
+      "id": "acovrp_reimann_dants_2004_paper",
+      "label": "D-Ants Paper (Reimann, Doerner, Hartl 2004)",
+      "file_type": "paper",
+      "source_file": "papers/06_aco_vrp_related.md"
+    },
+    {
+      "id": "acovrp_reimann",
+      "label": "Reimann, M.",
+      "file_type": "author",
+      "source_file": "papers/06_aco_vrp_related.md"
+    },
+    {
+      "id": "acovrp_bianchi_2006_paper",
+      "label": "Hybrid Metaheuristics VRP Stochastic Demands (Bianchi et al. 2006)",
+      "file_type": "paper",
+      "source_file": "papers/06_aco_vrp_related.md"
+    },
+    {
+      "id": "acovrp_dorigo_blum_2005_survey",
+      "label": "ACO Theory Survey (Dorigo & Blum 2005)",
+      "file_type": "paper",
+      "source_file": "papers/06_aco_vrp_related.md"
+    },
+    {
+      "id": "acovrp_blum",
+      "label": "Blum, C.",
+      "file_type": "author",
+      "source_file": "papers/06_aco_vrp_related.md"
+    },
+    {
+      "id": "acovrp_dorigo_birattari_2006",
+      "label": "ACO IEEE Computational Intelligence (Dorigo, Birattari, Stutzle 2006)",
+      "file_type": "paper",
+      "source_file": "papers/06_aco_vrp_related.md"
+    },
+    {
+      "id": "acovrp_birattari",
+      "label": "Birattari, M.",
+      "file_type": "author",
+      "source_file": "papers/06_aco_vrp_related.md"
+    },
+    {
+      "id": "acovrp_broder_mitzenmacher_2004",
+      "label": "Network Applications of Bloom Filters Survey (Broder & Mitzenmacher 2004)",
+      "file_type": "paper",
+      "source_file": "papers/06_aco_vrp_related.md"
+    },
+    {
+      "id": "acovrp_broder",
+      "label": "Broder, A.",
+      "file_type": "author",
+      "source_file": "papers/06_aco_vrp_related.md"
+    },
+    {
+      "id": "acovrp_mitzenmacher",
+      "label": "Mitzenmacher, M.",
+      "file_type": "author",
+      "source_file": "papers/06_aco_vrp_related.md"
+    },
+    {
+      "id": "acovrp_russell_norvig_2020",
+      "label": "AIMA 4th Ed. \u2014 Cycle Detection and Closed-List Filtering (Russell & Norvig 2020)",
+      "file_type": "paper",
+      "source_file": "papers/06_aco_vrp_related.md"
+    },
+    {
+      "id": "acovrp_vrp_time_windows",
+      "label": "VRP with Time Windows (VRPTW)",
+      "file_type": "concept",
+      "source_file": "papers/06_aco_vrp_related.md"
+    },
+    {
+      "id": "acovrp_cvrp",
+      "label": "Capacitated VRP (CVRP)",
+      "file_type": "concept",
+      "source_file": "papers/06_aco_vrp_related.md"
+    },
+    {
+      "id": "acovrp_soft_penalty_bf_novelty",
+      "label": "Novel: BF as Soft Penalty (not hard pruning) in CVRP",
+      "file_type": "concept",
+      "source_file": "papers/06_aco_vrp_related.md"
+    },
+    {
+      "id": "acovrp_adaptive_bf_activation",
+      "label": "Adaptive BF Activation on MMAS Stagnation",
+      "file_type": "concept",
+      "source_file": "papers/06_aco_vrp_related.md"
+    },
+    {
+      "id": "acovrp_probabilistic_decay",
+      "label": "Probabilistic BF Decay for Self-Reset",
+      "file_type": "concept",
+      "source_file": "papers/06_aco_vrp_related.md"
+    },
+    {
+      "id": "baco2018_paper",
+      "label": "BACO Paper (Jafarinejad & Amini 2018)",
+      "file_type": "paper",
+      "source_file": "papers/baco_encrypted_db_bloom_2018.md"
+    },
+    {
+      "id": "baco2018_jafarinejad",
+      "label": "Jafarinejad, S.",
+      "file_type": "author",
+      "source_file": "papers/baco_encrypted_db_bloom_2018.md"
+    },
+    {
+      "id": "baco2018_amini",
+      "label": "Amini, M.",
+      "file_type": "author",
+      "source_file": "papers/baco_encrypted_db_bloom_2018.md"
+    },
+    {
+      "id": "baco2018_algorithm",
+      "label": "BACO: Bloom-filter Enhanced ACO Algorithm",
+      "file_type": "algorithm",
+      "source_file": "papers/baco_encrypted_db_bloom_2018.md"
+    },
+    {
+      "id": "baco2018_multi_join_query",
+      "label": "Multi-join Query Optimization Problem",
+      "file_type": "concept",
+      "source_file": "papers/baco_encrypted_db_bloom_2018.md"
+    },
+    {
+      "id": "baco2018_encrypted_db",
+      "label": "Bucket-based Encrypted Database",
+      "file_type": "concept",
+      "source_file": "papers/baco_encrypted_db_bloom_2018.md"
+    },
+    {
+      "id": "baco2018_false_positive_reduction",
+      "label": "BF Pre-screening Reduces False Positives in Join Paths",
+      "file_type": "concept",
+      "source_file": "papers/baco_encrypted_db_bloom_2018.md"
+    },
+    {
+      "id": "baco2018_pheromone_penalty",
+      "label": "Pheromone Penalty for High-FP Join Paths",
+      "file_type": "concept",
+      "source_file": "papers/baco_encrypted_db_bloom_2018.md"
+    },
+    {
+      "id": "baco2018_search_space_reduction",
+      "label": "ACO Search Space Reduction via BF",
+      "file_type": "concept",
+      "source_file": "papers/baco_encrypted_db_bloom_2018.md"
+    },
+    {
+      "id": "baco2018_bucket_join_evaluation",
+      "label": "Bloom Filter Pre-evaluation of Bucket Join Feasibility",
+      "file_type": "concept",
+      "source_file": "papers/baco_encrypted_db_bloom_2018.md"
+    },
+    {
+      "id": "iaps2014_paper",
+      "label": "IAPS Paper: Efficient Distributed File Search P2P (2014)",
+      "file_type": "paper",
+      "source_file": "papers/iaps_p2p_aco_bloom_2014.md"
+    },
+    {
+      "id": "iaps2014_algorithm",
+      "label": "IAPS: Improved Adaptive Probabilistic Search Algorithm",
+      "file_type": "algorithm",
+      "source_file": "papers/iaps_p2p_aco_bloom_2014.md"
+    },
+    {
+      "id": "iaps2014_p2p_network",
+      "label": "Unstructured Peer-to-Peer Network File Search",
+      "file_type": "concept",
+      "source_file": "papers/iaps_p2p_aco_bloom_2014.md"
+    },
+    {
+      "id": "iaps2014_attenuated_bloom_filter",
+      "label": "Attenuated Bloom Filter (ABF): d-hop BF Array",
+      "file_type": "concept",
+      "source_file": "papers/iaps_p2p_aco_bloom_2014.md"
+    },
+    {
+      "id": "iaps2014_hop_distance_bf",
+      "label": "BF_i Summarizes Files Reachable within i Hops",
+      "file_type": "concept",
+      "source_file": "papers/iaps_p2p_aco_bloom_2014.md"
+    },
+    {
+      "id": "iaps2014_aco_bf_direction_pruning",
+      "label": "ACO Direction Pruning via ABF Query",
+      "file_type": "concept",
+      "source_file": "papers/iaps_p2p_aco_bloom_2014.md"
+    },
+    {
+      "id": "iaps2014_bandwidth_reduction",
+      "label": "Communication Bandwidth Reduction via ABF",
+      "file_type": "concept",
+      "source_file": "papers/iaps_p2p_aco_bloom_2014.md"
+    },
+    {
+      "id": "utfaco2016_paper",
+      "label": "UTFACO Paper (2016, IEEE)",
+      "file_type": "paper",
+      "source_file": "papers/utfaco_dos_qos_2016.md"
+    },
+    {
+      "id": "utfaco2016_algorithm",
+      "label": "UTFACO: Unified Threat Identification and Fault Localization ACO",
+      "file_type": "algorithm",
+      "source_file": "papers/utfaco_dos_qos_2016.md"
+    },
+    {
+      "id": "utfaco2016_dos_detection",
+      "label": "DoS Attack Detection via IP Traceback",
+      "file_type": "concept",
+      "source_file": "papers/utfaco_dos_qos_2016.md"
+    },
+    {
+      "id": "utfaco2016_qos_fault_localization",
+      "label": "QoS Fault Node Localization in Network",
+      "file_type": "concept",
+      "source_file": "papers/utfaco_dos_qos_2016.md"
+    },
+    {
+      "id": "utfaco2016_bf_explored_path_pruning",
+      "label": "BF Excludes Already-Explored Paths/Nodes",
+      "file_type": "concept",
+      "source_file": "papers/utfaco_dos_qos_2016.md"
+    },
+    {
+      "id": "utfaco2016_packet_filtering",
+      "label": "BF Pre-screens Suspicious Packets Before ACO Precision Search",
+      "file_type": "concept",
+      "source_file": "papers/utfaco_dos_qos_2016.md"
+    },
+    {
+      "id": "utfaco2016_darpa_dataset",
+      "label": "DARPA Network Topology Dataset Validation",
+      "file_type": "concept",
+      "source_file": "papers/utfaco_dos_qos_2016.md"
+    }
+  ],
+  "edges": [
+    {
+      "source": "MmasEngine_class",
+      "target": "AcoEngine_class",
+      "relation": "extends",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/main/java/vrp/MmasEngine.java",
+      "weight": 1.0
+    },
+    {
+      "source": "MmasWithBloomFilter_class",
+      "target": "MmasEngine_class",
+      "relation": "extends",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/main/java/vrp/MmasWithBloomFilter.java",
+      "weight": 1.0
+    },
+    {
+      "source": "AcoWithBloomFilter_class",
+      "target": "AcoEngine_class",
+      "relation": "extends",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/main/java/vrp/AcoWithBloomFilter.java",
+      "weight": 1.0
+    },
+    {
+      "source": "AcoWithLocalSearch_class",
+      "target": "AcoEngine_class",
+      "relation": "extends",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/main/java/vrp/AcoWithLocalSearch.java",
+      "weight": 1.0
+    },
+    {
+      "source": "EdgeKey_class",
+      "target": "Hashable_interface",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/main/java/vrp/EdgeKey.java",
+      "weight": 1.0
+    },
+    {
+      "source": "PathKey_class",
+      "target": "Hashable_interface",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/main/java/vrp/PathKey.java",
+      "weight": 1.0
+    },
+    {
+      "source": "VisitKey_class",
+      "target": "Hashable_interface",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/main/java/vrp/VisitKey.java",
+      "weight": 1.0
+    },
+    {
+      "source": "LoadContextKey_class",
+      "target": "Hashable_interface",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/main/java/vrp/LoadContextKey.java",
+      "weight": 1.0
+    },
+    {
+      "source": "MmasWithBloomFilter_class",
+      "target": "BloomFilter_class",
+      "relation": "uses",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/main/java/vrp/MmasWithBloomFilter.java",
+      "weight": 1.0
+    },
+    {
+      "source": "AcoWithBloomFilter_class",
+      "target": "BloomFilter_class",
+      "relation": "uses",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/main/java/vrp/AcoWithBloomFilter.java",
+      "weight": 1.0
+    },
+    {
+      "source": "AcoWithBloomFilter_class",
+      "target": "LoadContextKey_class",
+      "relation": "uses",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/main/java/vrp/AcoWithBloomFilter.java",
+      "weight": 1.0
+    },
+    {
+      "source": "MmasWithBloomFilter_class",
+      "target": "LoadContextKey_class",
+      "relation": "uses",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/main/java/vrp/MmasWithBloomFilter.java",
+      "weight": 1.0
+    },
+    {
+      "source": "AcoEngine_class",
+      "target": "VrpProblem_class",
+      "relation": "uses",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/main/java/vrp/AcoEngine.java",
+      "weight": 1.0
+    },
+    {
+      "source": "AcoEngine_class",
+      "target": "VrpSolution_class",
+      "relation": "uses",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/main/java/vrp/AcoEngine.java",
+      "weight": 1.0
+    },
+    {
+      "source": "VrpSolution_calcDistance",
+      "target": "VrpProblem_class",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/main/java/vrp/VrpSolution.java",
+      "weight": 1.0
+    },
+    {
+      "source": "RandomVrpGenerator_class",
+      "target": "VrpProblem_class",
+      "relation": "uses",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/main/java/vrp/RandomVrpGenerator.java",
+      "weight": 1.0
+    },
+    {
+      "source": "RandomVrpGenerator_class",
+      "target": "Node_class",
+      "relation": "uses",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/main/java/vrp/RandomVrpGenerator.java",
+      "weight": 1.0
+    },
+    {
+      "source": "AcoWithLocalSearch_class",
+      "target": "LocalSearch_class",
+      "relation": "uses",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/main/java/vrp/AcoWithLocalSearch.java",
+      "weight": 1.0
+    },
+    {
+      "source": "BenchmarkRunner_class",
+      "target": "AcoEngine_class",
+      "relation": "uses",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/main/java/vrp/BenchmarkRunner.java",
+      "weight": 1.0
+    },
+    {
+      "source": "BenchmarkRunner_class",
+      "target": "MmasEngine_class",
+      "relation": "uses",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/main/java/vrp/BenchmarkRunner.java",
+      "weight": 1.0
+    },
+    {
+      "source": "BenchmarkRunner_class",
+      "target": "AcoWithBloomFilter_class",
+      "relation": "uses",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/main/java/vrp/BenchmarkRunner.java",
+      "weight": 1.0
+    },
+    {
+      "source": "BenchmarkRunner_class",
+      "target": "MmasWithBloomFilter_class",
+      "relation": "uses",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/main/java/vrp/BenchmarkRunner.java",
+      "weight": 1.0
+    },
+    {
+      "source": "BenchmarkRunner_class",
+      "target": "RandomVrpGenerator_class",
+      "relation": "uses",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/main/java/vrp/BenchmarkRunner.java",
+      "weight": 1.0
+    },
+    {
+      "source": "claude_md_implementer_role",
+      "target": "claude_md_advisor_hook",
+      "relation": "requires",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CLAUDE.md",
+      "weight": 1.0
+    },
+    {
+      "source": "claude_md_project_config",
+      "target": "claude_md_graphify_plugin",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CLAUDE.md",
+      "weight": 1.0
+    },
+    {
+      "source": "claude_md_project_config",
+      "target": "claude_md_paper_verifier_agent",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CLAUDE.md",
+      "weight": 1.0
+    },
+    {
+      "source": "claude_md_project_config",
+      "target": "claude_md_security_guidance_hook",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CLAUDE.md",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_ant_system_paper",
+      "target": "readme_AcoEngine_class",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "papers/README.md",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_mmas_paper",
+      "target": "readme_MmasEngine_class",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "papers/README.md",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_mmas_paper",
+      "target": "readme_MmasWithBloomFilter_class",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "papers/README.md",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_bloom_filter_paper",
+      "target": "readme_AcoWithBloomFilter_class",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "papers/README.md",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_bloom_filter_paper",
+      "target": "readme_MmasWithBloomFilter_class",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "papers/README.md",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_two_opt_paper",
+      "target": "readme_LocalSearch_class",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "papers/README.md",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_tabu_search_paper",
+      "target": "readme_LocalSearch_class",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "papers/README.md",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_novel_contribution",
+      "target": "readme_load_context_key",
+      "relation": "uses",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "papers/README.md",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_novel_contribution",
+      "target": "readme_mmas_stagnation_bf_activation",
+      "relation": "uses",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "papers/README.md",
+      "weight": 1.0
+    },
+    {
+      "source": "as1996_paper",
+      "target": "as1996_dorigo",
+      "relation": "authored_by",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "papers/01_ant_system_dorigo_1996.md",
+      "weight": 1.0
+    },
+    {
+      "source": "as1996_paper",
+      "target": "as1996_maniezzo",
+      "relation": "authored_by",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "papers/01_ant_system_dorigo_1996.md",
+      "weight": 1.0
+    },
+    {
+      "source": "as1996_paper",
+      "target": "as1996_colorni",
+      "relation": "authored_by",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "papers/01_ant_system_dorigo_1996.md",
+      "weight": 1.0
+    },
+    {
+      "source": "as1996_paper",
+      "target": "as1996_pheromone_init",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "papers/01_ant_system_dorigo_1996.md",
+      "weight": 1.0
+    },
+    {
+      "source": "as1996_paper",
+      "target": "as1996_transition_rule",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "papers/01_ant_system_dorigo_1996.md",
+      "weight": 1.0
+    },
+    {
+      "source": "as1996_paper",
+      "target": "as1996_pheromone_update",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "papers/01_ant_system_dorigo_1996.md",
+      "weight": 1.0
+    },
+    {
+      "source": "as1996_transition_rule",
+      "target": "as1996_heuristic_visibility",
+      "relation": "uses",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "papers/01_ant_system_dorigo_1996.md",
+      "weight": 1.0
+    },
+    {
+      "source": "as1996_transition_rule",
+      "target": "as1996_alpha_param",
+      "relation": "parameterized_by",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "papers/01_ant_system_dorigo_1996.md",
+      "weight": 1.0
+    },
+    {
+      "source": "as1996_transition_rule",
+      "target": "as1996_beta_param",
+      "relation": "parameterized_by",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "papers/01_ant_system_dorigo_1996.md",
+      "weight": 1.0
+    },
+    {
+      "source": "as1996_pheromone_update",
+      "target": "as1996_rho_param",
+      "relation": "parameterized_by",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "papers/01_ant_system_dorigo_1996.md",
+      "weight": 1.0
+    },
+    {
+      "source": "as1996_pheromone_update",
+      "target": "as1996_Q_param",
+      "relation": "parameterized_by",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "papers/01_ant_system_dorigo_1996.md",
+      "weight": 1.0
+    },
+    {
+      "source": "as1996_pheromone_init",
+      "target": "as1996_nearest_neighbor_heuristic",
+      "relation": "uses",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "papers/01_ant_system_dorigo_1996.md",
+      "weight": 1.0
+    },
+    {
+      "source": "as1996_paper",
+      "target": "readme_AcoEngine_class",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "papers/01_ant_system_dorigo_1996.md",
+      "weight": 1.0
+    },
+    {
+      "source": "mmas2000_paper",
+      "target": "mmas2000_stutzle",
+      "relation": "authored_by",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "papers/02_mmas_stutzle_hoos_2000.md",
+      "weight": 1.0
+    },
+    {
+      "source": "mmas2000_paper",
+      "target": "mmas2000_hoos",
+      "relation": "authored_by",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "papers/02_mmas_stutzle_hoos_2000.md",
+      "weight": 1.0
+    },
+    {
+      "source": "mmas2000_paper",
+      "target": "mmas2000_tmax_formula",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "papers/02_mmas_stutzle_hoos_2000.md",
+      "weight": 1.0
+    },
+    {
+      "source": "mmas2000_paper",
+      "target": "mmas2000_tmin_formula",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "papers/02_mmas_stutzle_hoos_2000.md",
+      "weight": 1.0
+    },
+    {
+      "source": "mmas2000_paper",
+      "target": "mmas2000_pheromone_clipping",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "papers/02_mmas_stutzle_hoos_2000.md",
+      "weight": 1.0
+    },
+    {
+      "source": "mmas2000_paper",
+      "target": "mmas2000_single_ant_update",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "papers/02_mmas_stutzle_hoos_2000.md",
+      "weight": 1.0
+    },
+    {
+      "source": "mmas2000_paper",
+      "target": "mmas2000_fgb_schedule",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "papers/02_mmas_stutzle_hoos_2000.md",
+      "weight": 1.0
+    },
+    {
+      "source": "mmas2000_paper",
+      "target": "mmas2000_lambda_branching",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "papers/02_mmas_stutzle_hoos_2000.md",
+      "weight": 1.0
+    },
+    {
+      "source": "mmas2000_lambda_branching",
+      "target": "mmas2000_stagnation_reinit",
+      "relation": "triggers",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "papers/02_mmas_stutzle_hoos_2000.md",
+      "weight": 1.0
+    },
+    {
+      "source": "mmas2000_tmax_formula",
+      "target": "mmas2000_tmin_formula",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "papers/02_mmas_stutzle_hoos_2000.md",
+      "weight": 0.9
+    },
+    {
+      "source": "mmas2000_paper",
+      "target": "as1996_paper",
+      "relation": "extends",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": "papers/02_mmas_stutzle_hoos_2000.md",
+      "weight": 0.9
+    },
+    {
+      "source": "mmas2000_paper",
+      "target": "readme_MmasEngine_class",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "papers/02_mmas_stutzle_hoos_2000.md",
+      "weight": 1.0
+    },
+    {
+      "source": "twoopt1965_paper",
+      "target": "twoopt1965_lin",
+      "relation": "authored_by",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "papers/03_two_opt_lin_1965.md",
+      "weight": 1.0
+    },
+    {
+      "source": "twoopt1958_croes_paper",
+      "target": "twoopt1958_croes",
+      "relation": "authored_by",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "papers/03_two_opt_lin_1965.md",
+      "weight": 1.0
+    },
+    {
+      "source": "twoopt1965_paper",
+      "target": "twoopt1958_croes_paper",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "papers/03_two_opt_lin_1965.md",
+      "weight": 0.9
+    },
+    {
+      "source": "twoopt1965_paper",
+      "target": "twoopt_move",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "papers/03_two_opt_lin_1965.md",
+      "weight": 1.0
+    },
+    {
+      "source": "twoopt_move",
+      "target": "twoopt_improvement_condition",
+      "relation": "uses",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "papers/03_two_opt_lin_1965.md",
+      "weight": 1.0
+    },
+    {
+      "source": "twoopt_move",
+      "target": "twoopt_segment_reversal",
+      "relation": "uses",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "papers/03_two_opt_lin_1965.md",
+      "weight": 1.0
+    },
+    {
+      "source": "twoopt_move",
+      "target": "twoopt_local_optimum",
+      "relation": "converges_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "papers/03_two_opt_lin_1965.md",
+      "weight": 1.0
+    },
+    {
+      "source": "twoopt1965_paper",
+      "target": "twoopt_intra_route",
+      "relation": "applied_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "papers/03_two_opt_lin_1965.md",
+      "weight": 1.0
+    },
+    {
+      "source": "twoopt1965_paper",
+      "target": "readme_LocalSearch_class",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "papers/03_two_opt_lin_1965.md",
+      "weight": 1.0
+    },
+    {
+      "source": "tabu1989_paper",
+      "target": "tabu_glover",
+      "relation": "authored_by",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "papers/04_tabu_search_glover_1989.md",
+      "weight": 1.0
+    },
+    {
+      "source": "tabu1986_paper",
+      "target": "tabu_glover",
+      "relation": "authored_by",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "papers/04_tabu_search_glover_1989.md",
+      "weight": 1.0
+    },
+    {
+      "source": "tabu1990_paper",
+      "target": "tabu_glover",
+      "relation": "authored_by",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "papers/04_tabu_search_glover_1989.md",
+      "weight": 1.0
+    },
+    {
+      "source": "tabu1986_paper",
+      "target": "tabu1989_paper",
+      "relation": "precedes",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "papers/04_tabu_search_glover_1989.md",
+      "weight": 1.0
+    },
+    {
+      "source": "tabu1989_paper",
+      "target": "tabu1990_paper",
+      "relation": "precedes",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "papers/04_tabu_search_glover_1989.md",
+      "weight": 1.0
+    },
+    {
+      "source": "tabu1989_paper",
+      "target": "tabu_core_mechanism",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "papers/04_tabu_search_glover_1989.md",
+      "weight": 1.0
+    },
+    {
+      "source": "tabu_core_mechanism",
+      "target": "tabu_list",
+      "relation": "uses",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "papers/04_tabu_search_glover_1989.md",
+      "weight": 1.0
+    },
+    {
+      "source": "tabu_core_mechanism",
+      "target": "tabu_aspiration_criterion",
+      "relation": "uses",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "papers/04_tabu_search_glover_1989.md",
+      "weight": 1.0
+    },
+    {
+      "source": "tabu_list",
+      "target": "tabu_fifo_eviction",
+      "relation": "uses",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "papers/04_tabu_search_glover_1989.md",
+      "weight": 1.0
+    },
+    {
+      "source": "tabu1989_paper",
+      "target": "tabu_dynamic_tenure",
+      "relation": "recommends",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "papers/04_tabu_search_glover_1989.md",
+      "weight": 1.0
+    },
+    {
+      "source": "tabu1989_paper",
+      "target": "readme_LocalSearch_class",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "papers/04_tabu_search_glover_1989.md",
+      "weight": 1.0
+    },
+    {
+      "source": "tabu1989_paper",
+      "target": "twoopt1965_paper",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "papers/04_tabu_search_glover_1989.md",
+      "weight": 0.8
+    },
+    {
+      "source": "bloom1970_paper",
+      "target": "bloom1970_bloom",
+      "relation": "authored_by",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "papers/05_bloom_filter_bloom_1970.md",
+      "weight": 1.0
+    },
+    {
+      "source": "bloom1970_paper",
+      "target": "bloom1970_bit_array",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "papers/05_bloom_filter_bloom_1970.md",
+      "weight": 1.0
+    },
+    {
+      "source": "bloom1970_paper",
+      "target": "bloom1970_hash_functions",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "papers/05_bloom_filter_bloom_1970.md",
+      "weight": 1.0
+    },
+    {
+      "source": "bloom1970_paper",
+      "target": "bloom1970_add_operation",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "papers/05_bloom_filter_bloom_1970.md",
+      "weight": 1.0
+    },
+    {
+      "source": "bloom1970_paper",
+      "target": "bloom1970_query_operation",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "papers/05_bloom_filter_bloom_1970.md",
+      "weight": 1.0
+    },
+    {
+      "source": "bloom1970_paper",
+      "target": "bloom1970_false_positive_rate",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "papers/05_bloom_filter_bloom_1970.md",
+      "weight": 1.0
+    },
+    {
+      "source": "bloom1970_paper",
+      "target": "bloom1970_optimal_k",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "papers/05_bloom_filter_bloom_1970.md",
+      "weight": 1.0
+    },
+    {
+      "source": "bloom1970_paper",
+      "target": "bloom1970_optimal_m",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "papers/05_bloom_filter_bloom_1970.md",
+      "weight": 1.0
+    },
+    {
+      "source": "bloom1970_paper",
+      "target": "bloom1970_no_false_negatives",
+      "relation": "guarantees",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "papers/05_bloom_filter_bloom_1970.md",
+      "weight": 1.0
+    },
+    {
+      "source": "bloom1970_counting_variant",
+      "target": "bloom1970_decay_operation",
+      "relation": "enables",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "papers/05_bloom_filter_bloom_1970.md",
+      "weight": 1.0
+    },
+    {
+      "source": "bloom1970_decay_operation",
+      "target": "bloom1970_novel_application",
+      "relation": "part_of",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "papers/05_bloom_filter_bloom_1970.md",
+      "weight": 1.0
+    },
+    {
+      "source": "bloom1970_project_load_context_key",
+      "target": "bloom1970_novel_application",
+      "relation": "part_of",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "papers/05_bloom_filter_bloom_1970.md",
+      "weight": 1.0
+    },
+    {
+      "source": "bloom1970_soft_penalty",
+      "target": "bloom1970_novel_application",
+      "relation": "part_of",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "papers/05_bloom_filter_bloom_1970.md",
+      "weight": 1.0
+    },
+    {
+      "source": "bloom1970_stagnation_window",
+      "target": "bloom1970_novel_application",
+      "relation": "parameterizes",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "papers/05_bloom_filter_bloom_1970.md",
+      "weight": 1.0
+    },
+    {
+      "source": "bloom1970_novel_application",
+      "target": "readme_MmasWithBloomFilter_class",
+      "relation": "implemented_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "papers/05_bloom_filter_bloom_1970.md",
+      "weight": 1.0
+    },
+    {
+      "source": "bloom1970_novel_application",
+      "target": "readme_AcoWithBloomFilter_class",
+      "relation": "implemented_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "papers/05_bloom_filter_bloom_1970.md",
+      "weight": 1.0
+    },
+    {
+      "source": "mmas2000_lambda_branching",
+      "target": "bloom1970_novel_application",
+      "relation": "triggers",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "papers/05_bloom_filter_bloom_1970.md",
+      "weight": 1.0
+    },
+    {
+      "source": "acovrp_acs1997_paper",
+      "target": "as1996_dorigo",
+      "relation": "authored_by",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "papers/06_aco_vrp_related.md",
+      "weight": 1.0
+    },
+    {
+      "source": "acovrp_acs1997_paper",
+      "target": "acovrp_gambardella",
+      "relation": "authored_by",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "papers/06_aco_vrp_related.md",
+      "weight": 1.0
+    },
+    {
+      "source": "acovrp_acs1997_paper",
+      "target": "as1996_paper",
+      "relation": "extends",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": "papers/06_aco_vrp_related.md",
+      "weight": 0.9
+    },
+    {
+      "source": "acovrp_acs1997_paper",
+      "target": "acovrp_acs_pseudo_random_rule",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "papers/06_aco_vrp_related.md",
+      "weight": 1.0
+    },
+    {
+      "source": "acovrp_acs1997_paper",
+      "target": "acovrp_acs_local_pheromone_update",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "papers/06_aco_vrp_related.md",
+      "weight": 1.0
+    },
+    {
+      "source": "acovrp_acs1997_paper",
+      "target": "acovrp_acs_global_update_best_ant",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "papers/06_aco_vrp_related.md",
+      "weight": 1.0
+    },
+    {
+      "source": "acovrp_macs_vrptw_paper",
+      "target": "acovrp_gambardella",
+      "relation": "authored_by",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "papers/06_aco_vrp_related.md",
+      "weight": 1.0
+    },
+    {
+      "source": "acovrp_macs_vrptw_paper",
+      "target": "acovrp_taillard",
+      "relation": "authored_by",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "papers/06_aco_vrp_related.md",
+      "weight": 1.0
+    },
+    {
+      "source": "acovrp_macs_vrptw_paper",
+      "target": "acovrp_vrp_time_windows",
+      "relation": "applied_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": "papers/06_aco_vrp_related.md",
+      "weight": 0.9
+    },
+    {
+      "source": "acovrp_bell_mcmullen_2004_paper",
+      "target": "acovrp_bell",
+      "relation": "authored_by",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "papers/06_aco_vrp_related.md",
+      "weight": 1.0
+    },
+    {
+      "source": "acovrp_bell_mcmullen_2004_paper",
+      "target": "acovrp_mcmullen",
+      "relation": "authored_by",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "papers/06_aco_vrp_related.md",
+      "weight": 1.0
+    },
+    {
+      "source": "acovrp_bell_mcmullen_2004_paper",
+      "target": "acovrp_cvrp",
+      "relation": "applied_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": "papers/06_aco_vrp_related.md",
+      "weight": 0.9
+    },
+    {
+      "source": "acovrp_reimann_dants_2004_paper",
+      "target": "acovrp_reimann",
+      "relation": "authored_by",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "papers/06_aco_vrp_related.md",
+      "weight": 1.0
+    },
+    {
+      "source": "acovrp_dorigo_blum_2005_survey",
+      "target": "as1996_dorigo",
+      "relation": "authored_by",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "papers/06_aco_vrp_related.md",
+      "weight": 1.0
+    },
+    {
+      "source": "acovrp_dorigo_blum_2005_survey",
+      "target": "acovrp_blum",
+      "relation": "authored_by",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "papers/06_aco_vrp_related.md",
+      "weight": 1.0
+    },
+    {
+      "source": "acovrp_dorigo_blum_2005_survey",
+      "target": "as1996_paper",
+      "relation": "surveys",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "papers/06_aco_vrp_related.md",
+      "weight": 0.85
+    },
+    {
+      "source": "acovrp_dorigo_blum_2005_survey",
+      "target": "mmas2000_paper",
+      "relation": "surveys",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "papers/06_aco_vrp_related.md",
+      "weight": 0.85
+    },
+    {
+      "source": "acovrp_dorigo_birattari_2006",
+      "target": "as1996_dorigo",
+      "relation": "authored_by",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "papers/06_aco_vrp_related.md",
+      "weight": 1.0
+    },
+    {
+      "source": "acovrp_dorigo_birattari_2006",
+      "target": "acovrp_birattari",
+      "relation": "authored_by",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "papers/06_aco_vrp_related.md",
+      "weight": 1.0
+    },
+    {
+      "source": "acovrp_dorigo_birattari_2006",
+      "target": "mmas2000_stutzle",
+      "relation": "authored_by",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "papers/06_aco_vrp_related.md",
+      "weight": 1.0
+    },
+    {
+      "source": "acovrp_broder_mitzenmacher_2004",
+      "target": "acovrp_broder",
+      "relation": "authored_by",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "papers/06_aco_vrp_related.md",
+      "weight": 1.0
+    },
+    {
+      "source": "acovrp_broder_mitzenmacher_2004",
+      "target": "acovrp_mitzenmacher",
+      "relation": "authored_by",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "papers/06_aco_vrp_related.md",
+      "weight": 1.0
+    },
+    {
+      "source": "acovrp_broder_mitzenmacher_2004",
+      "target": "bloom1970_paper",
+      "relation": "surveys",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": "papers/06_aco_vrp_related.md",
+      "weight": 0.9
+    },
+    {
+      "source": "acovrp_soft_penalty_bf_novelty",
+      "target": "bloom1970_soft_penalty",
+      "relation": "semantically_similar_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "papers/06_aco_vrp_related.md",
+      "weight": 1.0
+    },
+    {
+      "source": "acovrp_adaptive_bf_activation",
+      "target": "mmas2000_lambda_branching",
+      "relation": "triggered_by",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "papers/06_aco_vrp_related.md",
+      "weight": 1.0
+    },
+    {
+      "source": "acovrp_probabilistic_decay",
+      "target": "bloom1970_decay_operation",
+      "relation": "semantically_similar_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "papers/06_aco_vrp_related.md",
+      "weight": 1.0
+    },
+    {
+      "source": "acovrp_russell_norvig_2020",
+      "target": "bloom1970_query_operation",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.7,
+      "source_file": "papers/06_aco_vrp_related.md",
+      "weight": 0.7
+    },
+    {
+      "source": "baco2018_paper",
+      "target": "baco2018_jafarinejad",
+      "relation": "authored_by",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "papers/baco_encrypted_db_bloom_2018.md",
+      "weight": 1.0
+    },
+    {
+      "source": "baco2018_paper",
+      "target": "baco2018_amini",
+      "relation": "authored_by",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "papers/baco_encrypted_db_bloom_2018.md",
+      "weight": 1.0
+    },
+    {
+      "source": "baco2018_paper",
+      "target": "baco2018_algorithm",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "papers/baco_encrypted_db_bloom_2018.md",
+      "weight": 1.0
+    },
+    {
+      "source": "baco2018_algorithm",
+      "target": "bloom1970_paper",
+      "relation": "uses",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "papers/baco_encrypted_db_bloom_2018.md",
+      "weight": 1.0
+    },
+    {
+      "source": "baco2018_algorithm",
+      "target": "as1996_paper",
+      "relation": "extends",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "papers/baco_encrypted_db_bloom_2018.md",
+      "weight": 0.85
+    },
+    {
+      "source": "baco2018_algorithm",
+      "target": "baco2018_multi_join_query",
+      "relation": "applied_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "papers/baco_encrypted_db_bloom_2018.md",
+      "weight": 1.0
+    },
+    {
+      "source": "baco2018_algorithm",
+      "target": "baco2018_encrypted_db",
+      "relation": "applied_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "papers/baco_encrypted_db_bloom_2018.md",
+      "weight": 1.0
+    },
+    {
+      "source": "baco2018_algorithm",
+      "target": "baco2018_false_positive_reduction",
+      "relation": "achieves",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "papers/baco_encrypted_db_bloom_2018.md",
+      "weight": 1.0
+    },
+    {
+      "source": "baco2018_algorithm",
+      "target": "baco2018_pheromone_penalty",
+      "relation": "uses",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "papers/baco_encrypted_db_bloom_2018.md",
+      "weight": 1.0
+    },
+    {
+      "source": "baco2018_algorithm",
+      "target": "baco2018_search_space_reduction",
+      "relation": "achieves",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "papers/baco_encrypted_db_bloom_2018.md",
+      "weight": 1.0
+    },
+    {
+      "source": "baco2018_pheromone_penalty",
+      "target": "bloom1970_soft_penalty",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "papers/baco_encrypted_db_bloom_2018.md",
+      "weight": 0.8
+    },
+    {
+      "source": "baco2018_algorithm",
+      "target": "bloom1970_novel_application",
+      "relation": "precedes",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "papers/baco_encrypted_db_bloom_2018.md",
+      "weight": 0.75
+    },
+    {
+      "source": "iaps2014_paper",
+      "target": "iaps2014_algorithm",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "papers/iaps_p2p_aco_bloom_2014.md",
+      "weight": 1.0
+    },
+    {
+      "source": "iaps2014_algorithm",
+      "target": "bloom1970_paper",
+      "relation": "uses",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "papers/iaps_p2p_aco_bloom_2014.md",
+      "weight": 1.0
+    },
+    {
+      "source": "iaps2014_algorithm",
+      "target": "as1996_paper",
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "papers/iaps_p2p_aco_bloom_2014.md",
+      "weight": 0.85
+    },
+    {
+      "source": "iaps2014_algorithm",
+      "target": "iaps2014_p2p_network",
+      "relation": "applied_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "papers/iaps_p2p_aco_bloom_2014.md",
+      "weight": 1.0
+    },
+    {
+      "source": "iaps2014_algorithm",
+      "target": "iaps2014_attenuated_bloom_filter",
+      "relation": "uses",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "papers/iaps_p2p_aco_bloom_2014.md",
+      "weight": 1.0
+    },
+    {
+      "source": "iaps2014_attenuated_bloom_filter",
+      "target": "iaps2014_hop_distance_bf",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "papers/iaps_p2p_aco_bloom_2014.md",
+      "weight": 1.0
+    },
+    {
+      "source": "iaps2014_attenuated_bloom_filter",
+      "target": "iaps2014_aco_bf_direction_pruning",
+      "relation": "enables",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "papers/iaps_p2p_aco_bloom_2014.md",
+      "weight": 1.0
+    },
+    {
+      "source": "iaps2014_aco_bf_direction_pruning",
+      "target": "iaps2014_bandwidth_reduction",
+      "relation": "achieves",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "papers/iaps_p2p_aco_bloom_2014.md",
+      "weight": 1.0
+    },
+    {
+      "source": "iaps2014_attenuated_bloom_filter",
+      "target": "bloom1970_bit_array",
+      "relation": "extends",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "papers/iaps_p2p_aco_bloom_2014.md",
+      "weight": 0.85
+    },
+    {
+      "source": "iaps2014_algorithm",
+      "target": "baco2018_algorithm",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.7,
+      "source_file": "papers/iaps_p2p_aco_bloom_2014.md",
+      "weight": 0.7
+    },
+    {
+      "source": "utfaco2016_paper",
+      "target": "utfaco2016_algorithm",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "papers/utfaco_dos_qos_2016.md",
+      "weight": 1.0
+    },
+    {
+      "source": "utfaco2016_algorithm",
+      "target": "bloom1970_paper",
+      "relation": "uses",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "papers/utfaco_dos_qos_2016.md",
+      "weight": 1.0
+    },
+    {
+      "source": "utfaco2016_algorithm",
+      "target": "as1996_paper",
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "papers/utfaco_dos_qos_2016.md",
+      "weight": 0.85
+    },
+    {
+      "source": "utfaco2016_algorithm",
+      "target": "utfaco2016_dos_detection",
+      "relation": "applied_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "papers/utfaco_dos_qos_2016.md",
+      "weight": 1.0
+    },
+    {
+      "source": "utfaco2016_algorithm",
+      "target": "utfaco2016_qos_fault_localization",
+      "relation": "applied_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "papers/utfaco_dos_qos_2016.md",
+      "weight": 1.0
+    },
+    {
+      "source": "utfaco2016_algorithm",
+      "target": "utfaco2016_bf_explored_path_pruning",
+      "relation": "uses",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "papers/utfaco_dos_qos_2016.md",
+      "weight": 1.0
+    },
+    {
+      "source": "utfaco2016_algorithm",
+      "target": "utfaco2016_packet_filtering",
+      "relation": "uses",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "papers/utfaco_dos_qos_2016.md",
+      "weight": 1.0
+    },
+    {
+      "source": "utfaco2016_algorithm",
+      "target": "utfaco2016_darpa_dataset",
+      "relation": "validated_by",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "papers/utfaco_dos_qos_2016.md",
+      "weight": 1.0
+    },
+    {
+      "source": "utfaco2016_bf_explored_path_pruning",
+      "target": "iaps2014_aco_bf_direction_pruning",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "papers/utfaco_dos_qos_2016.md",
+      "weight": 0.75
+    },
+    {
+      "source": "utfaco2016_algorithm",
+      "target": "baco2018_algorithm",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.7,
+      "source_file": "papers/utfaco_dos_qos_2016.md",
+      "weight": 0.7
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "aco_variants_hierarchy",
+      "label": "ACO Algorithm Hierarchy",
+      "nodes": [
+        "AcoEngine_class",
+        "MmasEngine_class",
+        "AcoWithBloomFilter_class",
+        "AcoWithLocalSearch_class",
+        "MmasWithBloomFilter_class"
+      ],
+      "relation": "implement",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/main/java/vrp/AcoEngine.java"
+    },
+    {
+      "id": "bloom_filter_combo",
+      "label": "Bloom Filter + ACO Hybrid Engines",
+      "nodes": [
+        "MmasWithBloomFilter_class",
+        "AcoWithBloomFilter_class",
+        "BloomFilter_class"
+      ],
+      "relation": "implement",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/main/java/vrp/MmasWithBloomFilter.java"
+    },
+    {
+      "id": "hashable_keys",
+      "label": "Hashable Key Types for BloomFilter",
+      "nodes": [
+        "EdgeKey_class",
+        "PathKey_class",
+        "VisitKey_class",
+        "LoadContextKey_class"
+      ],
+      "relation": "implement",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/main/java/vrp/Hashable.java"
+    },
+    {
+      "id": "local_search_methods",
+      "label": "Local Search 2-opt and Tabu",
+      "nodes": [
+        "LocalSearch_twoOpt",
+        "LocalSearch_tabu",
+        "AcoWithLocalSearch_class"
+      ],
+      "relation": "implement",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/main/java/vrp/LocalSearch.java"
+    },
+    {
+      "id": "he_aco_bf_applications",
+      "label": "ACO + Bloom Filter Combined Applications",
+      "nodes": [
+        "baco2018_algorithm",
+        "iaps2014_algorithm",
+        "utfaco2016_algorithm",
+        "bloom1970_novel_application"
+      ],
+      "relation": "share_theme",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "papers/06_aco_vrp_related.md"
+    },
+    {
+      "id": "he_aco_algorithm_family",
+      "label": "ACO Algorithm Family",
+      "nodes": [
+        "as1996_paper",
+        "mmas2000_paper",
+        "acovrp_acs1997_paper",
+        "readme_AcoEngine_class",
+        "readme_MmasEngine_class"
+      ],
+      "relation": "belong_to_same_family",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "papers/06_aco_vrp_related.md"
+    },
+    {
+      "id": "he_local_search_techniques",
+      "label": "Local Search / Metaheuristic Techniques",
+      "nodes": [
+        "twoopt1965_paper",
+        "tabu1989_paper",
+        "readme_LocalSearch_class"
+      ],
+      "relation": "share_theme",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "papers/README.md"
+    },
+    {
+      "id": "he_mmas_bloom_filter_integration",
+      "label": "MMAS + Bloom Filter Integration (Novel Contribution)",
+      "nodes": [
+        "mmas2000_paper",
+        "bloom1970_paper",
+        "readme_MmasWithBloomFilter_class",
+        "mmas2000_lambda_branching",
+        "bloom1970_decay_operation",
+        "bloom1970_soft_penalty",
+        "bloom1970_project_load_context_key"
+      ],
+      "relation": "constitute_novel_contribution",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "papers/05_bloom_filter_bloom_1970.md"
+    },
+    {
+      "id": "he_pheromone_update_mechanisms",
+      "label": "Pheromone Update Mechanisms Across ACO Variants",
+      "nodes": [
+        "as1996_pheromone_update",
+        "mmas2000_single_ant_update",
+        "mmas2000_pheromone_clipping",
+        "acovrp_acs_local_pheromone_update",
+        "acovrp_acs_global_update_best_ant"
+      ],
+      "relation": "share_theme",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.95,
+      "source_file": "papers/06_aco_vrp_related.md"
+    },
+    {
+      "id": "he_vrp_applications_aco",
+      "label": "ACO Applied to VRP Problem Variants",
+      "nodes": [
+        "acovrp_cvrp",
+        "acovrp_vrp_time_windows",
+        "acovrp_bell_mcmullen_2004_paper",
+        "acovrp_macs_vrptw_paper",
+        "acovrp_reimann_dants_2004_paper",
+        "readme_AcoEngine_class",
+        "readme_MmasEngine_class"
+      ],
+      "relation": "share_theme",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "papers/06_aco_vrp_related.md"
+    },
+    {
+      "id": "he_bloom_filter_variants",
+      "label": "Bloom Filter Variants and Extensions",
+      "nodes": [
+        "bloom1970_paper",
+        "bloom1970_counting_variant",
+        "iaps2014_attenuated_bloom_filter",
+        "bloom1970_decay_operation"
+      ],
+      "relation": "share_theme",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.95,
+      "source_file": "papers/iaps_p2p_aco_bloom_2014.md"
+    },
+    {
+      "id": "he_dorigo_authorship",
+      "label": "Papers Co-authored by Dorigo",
+      "nodes": [
+        "as1996_paper",
+        "acovrp_acs1997_paper",
+        "acovrp_dorigo_blum_2005_survey",
+        "acovrp_dorigo_birattari_2006"
+      ],
+      "relation": "share_author",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "papers/06_aco_vrp_related.md"
+    },
+    {
+      "id": "he_stagnation_handling",
+      "label": "Stagnation Detection and Handling in ACO",
+      "nodes": [
+        "mmas2000_lambda_branching",
+        "mmas2000_stagnation_reinit",
+        "bloom1970_novel_application",
+        "acovrp_adaptive_bf_activation",
+        "bloom1970_stagnation_window"
+      ],
+      "relation": "share_theme",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "papers/02_mmas_stutzle_hoos_2000.md"
+    },
+    {
+      "id": "he_bf_search_space_pruning",
+      "label": "Bloom Filter as Search Space Pruning Tool",
+      "nodes": [
+        "baco2018_search_space_reduction",
+        "iaps2014_aco_bf_direction_pruning",
+        "utfaco2016_bf_explored_path_pruning",
+        "bloom1970_soft_penalty"
+      ],
+      "relation": "share_theme",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": "papers/06_aco_vrp_related.md"
+    },
+    {
+      "id": "he_project_java_classes",
+      "label": "Project Java Implementation Classes",
+      "nodes": [
+        "readme_AcoEngine_class",
+        "readme_MmasEngine_class",
+        "readme_MmasWithBloomFilter_class",
+        "readme_AcoWithBloomFilter_class",
+        "readme_LocalSearch_class"
+      ],
+      "relation": "constitute_project_codebase",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "papers/README.md"
+    }
+  ],
+  "input_tokens": 0,
+  "output_tokens": 0
+}

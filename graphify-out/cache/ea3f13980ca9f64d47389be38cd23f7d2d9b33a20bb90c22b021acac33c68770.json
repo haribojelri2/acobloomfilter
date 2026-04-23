@@ -1,0 +1,1 @@
+{"nodes": [{"id": "MmasEngine_class", "label": "MmasEngine Class", "file_type": "code", "source_file": "src/main/java/vrp/MmasEngine.java"}], "edges": [{"source": "MmasEngine_class", "target": "AcoEngine_class", "relation": "extends", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "src/main/java/vrp/MmasEngine.java", "weight": 1.0}], "hyperedges": []}

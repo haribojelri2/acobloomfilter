@@ -1,0 +1,66 @@
+
+=== E-n101-k8 (opt=817, 기준=ACO+BF EDGE_LOAD=33.23%) ===
+algorithm            key                gap%      vs BF
+--------------------------------------------------------
+ACO                  none             32.43%     -0.60% ?
+MMAS                 none             32.94%     -0.22%  
+ACO+2opt             none             24.89%     -6.26% ?
+
+ACO+BF               EDGE             35.82%     +1.95% ?
+ACO+BF               EDGE_LOAD        33.23%     +0.00%  
+ACO+BF               DEST_LOAD        32.50%     -0.55% ?
+ACO+BF               DEST_ONLY        33.89%     +0.50%  
+
+ACO+2opt+BF          EDGE             24.92%     -6.23% ?
+ACO+2opt+BF          EDGE_LOAD        25.81%     -5.57% ?
+ACO+2opt+BF          DEST_LOAD        24.92%     -6.23% ?
+ACO+2opt+BF          DEST_ONLY        25.52%     -5.78% ?
+
+MMAS+BF              EDGE             37.53%     +3.23% ?
+MMAS+BF              EDGE_LOAD        30.93%     -1.72% ?
+MMAS+BF              DEST_LOAD        34.11%     +0.66% ?
+MMAS+BF              DEST_ONLY        26.50%     -5.05% ?
+
+=== E-n101-k14 (opt=1071, 기준=ACO+BF EDGE_LOAD=33.44%) ===
+algorithm            key                gap%      vs BF
+--------------------------------------------------------
+ACO                  none             33.71%     +0.20%  
+MMAS                 none             33.48%     +0.03%  
+ACO+2opt             none             27.64%     -4.35% ?
+
+ACO+BF               EDGE             34.86%     +1.06% ?
+ACO+BF               EDGE_LOAD        33.44%     +0.00%  
+ACO+BF               DEST_LOAD        34.78%     +1.00% ?
+ACO+BF               DEST_ONLY        32.60%     -0.63% ?
+
+ACO+2opt+BF          EDGE             26.43%     -5.25% ?
+ACO+2opt+BF          EDGE_LOAD        26.84%     -4.95% ?
+ACO+2opt+BF          DEST_LOAD        26.48%     -5.22% ?
+ACO+2opt+BF          DEST_ONLY        26.87%     -4.93% ?
+
+MMAS+BF              EDGE             36.48%     +2.28% ?
+MMAS+BF              EDGE_LOAD        35.09%     +1.23% ?
+MMAS+BF              DEST_LOAD        34.28%     +0.62% ?
+MMAS+BF              DEST_ONLY        31.82%     -1.22% ?
+
+=== Golden_1 (opt=5628, 기준=ACO+BF EDGE_LOAD=19.66%) ===
+algorithm            key                gap%      vs BF
+--------------------------------------------------------
+ACO                  none             17.73%     -1.62% ?
+MMAS                 none             27.40%     +6.47% ?
+ACO+2opt             none              9.59%     -8.42% ?
+
+ACO+BF               EDGE             20.17%     +0.43%  
+ACO+BF               EDGE_LOAD        19.66%     +0.00%  
+ACO+BF               DEST_LOAD        18.43%     -1.03% ?
+ACO+BF               DEST_ONLY        17.84%     -1.52% ?
+
+ACO+2opt+BF          EDGE             12.16%     -6.27% ?
+ACO+2opt+BF          EDGE_LOAD         9.89%     -8.17% ?
+ACO+2opt+BF          DEST_LOAD         9.54%     -8.46% ?
+ACO+2opt+BF          DEST_ONLY         9.80%     -8.25% ?
+
+MMAS+BF              EDGE             29.16%     +7.94% ?
+MMAS+BF              EDGE_LOAD        30.48%     +9.04% ?
+MMAS+BF              DEST_LOAD        30.51%     +9.06% ?
+MMAS+BF              DEST_ONLY        31.14%     +9.59% ?

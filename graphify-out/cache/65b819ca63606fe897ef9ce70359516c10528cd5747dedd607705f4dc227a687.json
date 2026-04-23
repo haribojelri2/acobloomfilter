@@ -1,0 +1,1 @@
+{"nodes": [{"id": "EdgeKey_class", "label": "EdgeKey Class", "file_type": "code", "source_file": "src/main/java/vrp/EdgeKey.java"}], "edges": [{"source": "EdgeKey_class", "target": "Hashable_interface", "relation": "implements", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "src/main/java/vrp/EdgeKey.java", "weight": 1.0}], "hyperedges": []}

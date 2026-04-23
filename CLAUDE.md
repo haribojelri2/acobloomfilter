@@ -2,40 +2,28 @@
 
 ## 역할
 나는 이 프로젝트의 **구현 담당 AI**다.
-Antigravity(Gemini)와 협력하여 사용자의 요청을 구현한다.
+사용자의 요청을 분석하고 직접 구현한다.
 
-## 협업 규칙
+## 작업 규칙
 
-### 작업 시작 시
-1. `.ai-collab/shared_context.md`를 읽어 현재 상태 파악
-2. `.ai-collab/inbox_claude.md`를 확인하여 Antigravity의 메시지 확인
-3. 메시지가 있으면 읽고 `status: read`로 변경
+### 실행 전
+- **advisor를 반드시 호출**하여 접근 방식을 검토받은 후 구현을 시작한다.
 
 ### 작업 중
-- 분석/설계가 필요한 경우 `.ai-collab/inbox_antigravity.md`에 메시지 작성
-- 진행 상황을 `.ai-collab/shared_context.md`의 "진행 상황" 섹션에 업데이트
-- 모든 대화는 `.ai-collab/conversation_log.md`에 기록
+- 파일 수정, 코드 구현, 터미널 명령 실행을 담당한다.
 
-### 메시지 작성 형식
-```
----
-from: Claude Code
-to: Antigravity
-timestamp: YYYY-MM-DD HH:MM
-status: unread
-message: |
-  [내용]
----
-```
+### 실행 후
+- **advisor를 반드시 호출**하여 완료된 작업을 검토받는다.
+- 작업이 완료됐다고 선언하기 전에 advisor 검토를 거친다.
 
-### 역할 분담
-- **Antigravity(Gemini)**: 고수준 설계, 아키텍처 제안, 코드 분석
-- **Claude Code(나)**: 실제 파일 수정, 코드 구현, 터미널 명령 실행
+### advisor 응답 형식
+- **100단어 이내** 열거형(bullet list)으로만 답한다.
+- 산문 설명 없이 핵심 항목만 나열한다.
 
 ## 프로젝트 디렉토리
-- `.ai-collab/` : AI 간 통신 파일
 - `CLAUDE.md` : 이 파일 (Claude Code 설정)
-- `AGENTS.md` : Antigravity 설정
+- `src/` : Java 소스코드
+- `out/` : 빌드/출력 파일
 
 ## 활성화된 플러그인 및 스킬
 
@@ -49,6 +37,16 @@ message: |
 - `/commit-push-pr` : 커밋 + 푸시 + PR 생성 (commit-commands 플러그인)
 - `/revise-claude-md` : CLAUDE.md 개선 (claude-md-management 플러그인)
 - `skill-creator` : 새 스킬 생성/수정 (skill-creator 플러그인)
+- `paper-verifier` : 코드가 논문 알고리즘과 일치하는지 검증 (.claude/agents/paper-verifier.md)
 
 ### 훅
 - **security-guidance** : 파일 편집 시 보안 취약점(XSS, 인젝션 등) 경고 자동 실행
+
+## graphify
+
+This project has a graphify knowledge graph at graphify-out/.
+
+Rules:
+- Before answering architecture or codebase questions, read graphify-out/GRAPH_REPORT.md for god nodes and community structure
+- If graphify-out/wiki/index.md exists, navigate it instead of reading raw files
+- After modifying code files in this session, run `graphify update .` to keep the graph current (AST-only, no API cost)
