@@ -37,6 +37,7 @@ public class AcoWithBloomFilter extends AcoEngine {
         int n = problem.size();
         boolean[] visited = new boolean[n];
         visited[0] = true;
+        int unvisited = n - 1;
         List<List<Integer>> routes = new ArrayList<>();
         int[] hist = new int[maxSubPath - 1];
         int[] window = new int[maxSubPath];
@@ -46,9 +47,7 @@ public class AcoWithBloomFilter extends AcoEngine {
             int current = 0;
             int load = 0;
             int histSize = 0;
-            boolean added = true;
-            while (added) {
-                added = false;
+            while (true) {
                 int next = selectNextBf(hist, histSize, current, visited, load, window);
                 if (next == -1) break;
                 if (histSize < maxSubPath - 1) {
@@ -58,10 +57,10 @@ public class AcoWithBloomFilter extends AcoEngine {
                     hist[histSize - 1] = current;
                 }
                 visited[next] = true;
+                unvisited--;
                 route.add(next);
                 load += problem.nodes.get(next).demand;
                 current = next;
-                added = true;
             }
             if (route.isEmpty()) {
                 for (int i = 1; i < n; i++)
@@ -69,10 +68,7 @@ public class AcoWithBloomFilter extends AcoEngine {
                 break;
             }
             routes.add(route);
-            boolean allVisited = true;
-            for (int i = 1; i < n; i++)
-                if (!visited[i]) { allVisited = false; break; }
-            if (allVisited) break;
+            if (unvisited == 0) break;
         }
         if (useTwoOpt) routes = LocalSearch.applyTwoOpt(routes, problem);
         return routes;
@@ -123,19 +119,16 @@ public class AcoWithBloomFilter extends AcoEngine {
         return sum;
     }
 
-    protected void updatePheromone(List<List<List<Integer>>> allRoutes) {
+    protected void updatePheromone(List<List<List<Integer>>> allRoutes, double[] costs) {
         int n = problem.size();
         for (int i = 0; i < n; i++)
             for (int j = 0; j < n; j++)
                 pheromone[i][j] *= (1 - rho);
 
         double sumCost = 0;
-        double[] costs = new double[numAnts];
         for (int a = 0; a < numAnts; a++) {
-            double dist = VrpSolution.calcDistance(allRoutes.get(a), problem);
-            costs[a] = dist;
-            depositPheromone(allRoutes.get(a), q / dist);
-            sumCost += dist;
+            depositPheromone(allRoutes.get(a), q / costs[a]);
+            sumCost += costs[a];
         }
 
         bloomFilter.decay(BF_DECAY, rng);
@@ -172,11 +165,13 @@ public class AcoWithBloomFilter extends AcoEngine {
                 .mapToObj(a -> constructSolution())
                 .collect(Collectors.toList());
 
+            double[] costs = new double[numAnts];
             double iterBestDist = Double.MAX_VALUE;
-            for (List<List<Integer>> routes : allRoutes) {
-                double dist = VrpSolution.calcDistance(routes, problem);
+            for (int a = 0; a < numAnts; a++) {
+                double dist = VrpSolution.calcDistance(allRoutes.get(a), problem);
+                costs[a] = dist;
                 if (dist < iterBestDist) iterBestDist = dist;
-                if (dist < bestDist) { bestDist = dist; bestRoutes = routes; }
+                if (dist < bestDist) { bestDist = dist; bestRoutes = allRoutes.get(a); }
             }
 
             if (bloomFilter.getQueryCount() > 0) {
@@ -184,7 +179,7 @@ public class AcoWithBloomFilter extends AcoEngine {
                 hitRateCount++;
             }
 
-            updatePheromone(allRoutes);
+            updatePheromone(allRoutes, costs);
             logConvergence(iter, iterBestDist);
         }
         return new VrpSolution(bestRoutes, bestDist);

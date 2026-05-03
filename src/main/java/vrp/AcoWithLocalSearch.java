@@ -2,7 +2,6 @@ package vrp;
 
 import java.util.*;
 
-// ACO + Local Search (Tabu 또는 2-opt) 데코레이터
 public class AcoWithLocalSearch extends AcoEngine {
     public enum Mode { TABU, TWO_OPT, TWO_OPT_TABU }
     private final Mode mode;

@@ -22,6 +22,8 @@ public class BloomFilter {
             bitSet.set((int) pos);
     }
 
+    // No lock needed: bitSet writes happen only in the sequential phase (updatePheromone),
+    // with a happens-before edge before any parallel construction phase reads this.
     public boolean mightContain(Hashable item) {
         queryCount.incrementAndGet();
         for (long pos : item.getHashes(numHashes, bitSetSize))

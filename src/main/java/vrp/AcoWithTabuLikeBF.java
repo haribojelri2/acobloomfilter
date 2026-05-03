@@ -41,7 +41,7 @@ public class AcoWithTabuLikeBF extends AcoEngine {
     private static List<Integer> tabuWithBF(List<Integer> route, VrpProblem problem, int maxIter, int tabuTenure, double fpr) {
         List<Integer> best = new ArrayList<>(route);
         List<Integer> current = new ArrayList<>(route);
-        double bestDist = routeDist(best, problem);
+        double bestDist = LocalSearch.routeDist(best, problem);
 
         int bitSize = BloomFilter.optimalBitSetSize(tabuTenure, fpr);
         int numHash = BloomFilter.optimalNumHashes(bitSize, tabuTenure);
@@ -55,7 +55,7 @@ public class AcoWithTabuLikeBF extends AcoEngine {
             double bestNeighborDist = Double.MAX_VALUE;
             EdgeKey bestMoveKey = null;
 
-            double currentDist = routeDist(current, problem);
+            double currentDist = LocalSearch.routeDist(current, problem);
 
             for (int i = 0; i < current.size() - 1; i++) {
                 for (int j = i + 1; j < current.size(); j++) {
@@ -101,11 +101,4 @@ public class AcoWithTabuLikeBF extends AcoEngine {
         return best;
     }
 
-    private static double routeDist(List<Integer> route, VrpProblem problem) {
-        double d = problem.distMatrix[0][route.get(0)];
-        for (int i = 0; i < route.size() - 1; i++)
-            d += problem.distMatrix[route.get(i)][route.get(i + 1)];
-        d += problem.distMatrix[route.get(route.size() - 1)][0];
-        return d;
-    }
 }

@@ -4,7 +4,6 @@ import java.util.*;
 
 public class LocalSearch {
 
-    // 2-opt: 단일 경로 내 개선
     public static List<Integer> twoOpt(List<Integer> route, VrpProblem problem) {
         // route는 depot 제외 노드 목록. 전후에 depot(0) 암묵적으로 존재.
         List<Integer> best = new ArrayList<>(route);
@@ -21,7 +20,7 @@ public class LocalSearch {
                     double before = problem.distMatrix[a][b] + problem.distMatrix[c][d];
                     double after  = problem.distMatrix[a][c] + problem.distMatrix[b][d];
                     if (after < before - 1e-10) {
-                        best = twoOptSwap(best, i, j);
+                        Collections.reverse(best.subList(i, j + 1));
                         improved = true;
                     }
                 }
@@ -30,16 +29,6 @@ public class LocalSearch {
         return best;
     }
 
-    private static List<Integer> twoOptSwap(List<Integer> route, int i, int j) {
-        List<Integer> result = new ArrayList<>(route.subList(0, i));
-        List<Integer> reversed = new ArrayList<>(route.subList(i, j + 1));
-        Collections.reverse(reversed);
-        result.addAll(reversed);
-        result.addAll(route.subList(j + 1, route.size()));
-        return result;
-    }
-
-    // Tabu Search: 단일 경로에서 swap 기반
     public static List<Integer> tabu(List<Integer> route, VrpProblem problem, int maxIter, int tabuTenure) {
         List<Integer> best = new ArrayList<>(route);
         List<Integer> current = new ArrayList<>(route);
@@ -103,7 +92,7 @@ public class LocalSearch {
         return best;
     }
 
-    private static double routeDist(List<Integer> route, VrpProblem problem) {
+    static double routeDist(List<Integer> route, VrpProblem problem) {
         double d = problem.distMatrix[0][route.get(0)];
         for (int i = 0; i < route.size() - 1; i++)
             d += problem.distMatrix[route.get(i)][route.get(i + 1)];

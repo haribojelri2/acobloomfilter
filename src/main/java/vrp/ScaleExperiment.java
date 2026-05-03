@@ -49,12 +49,9 @@ public class ScaleExperiment {
         double[] logSum = null;
         double[] seedBests = new double[RUNS];
 
-        var f = AcoEngine.class.getDeclaredField("rng");
-        f.setAccessible(true);
-
         for (int r = 0; r < RUNS; r++) {
             AcoEngine engine = makeEngine(algo, p);
-            f.set(engine, new Random(r));
+            engine.rng = new Random(r);
             VrpSolution sol = engine.solve();
             double cost = sol.totalDistance;
             sumCost += cost;
@@ -66,8 +63,8 @@ public class ScaleExperiment {
             for (int i = 0; i < log.size(); i++) {
                 logSum[i*4+0] += log.get(i)[0]; // iter_best
                 logSum[i*4+1] += log.get(i)[1]; // global_best
-                logSum[i*4+2] += log.get(i)[2]; // time_ms
-                logSum[i*4+3] += log.get(i)[3]; // mem_bytes
+                logSum[i*4+2] += log.get(i)[2]; // time_sec
+                logSum[i*4+3] += log.get(i)[3]; // mem_mb
             }
         }
 

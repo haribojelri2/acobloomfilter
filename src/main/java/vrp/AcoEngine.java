@@ -13,11 +13,11 @@ public class AcoEngine {
     protected final int numAnts;
     protected final int maxIter;
     protected final double alpha, beta, rho, q;
-    protected final Random rng = new Random();
+    protected Random rng = new Random();
 
     protected List<List<Integer>> bestRoutes;
     protected double bestDist = Double.MAX_VALUE;
-    protected final List<double[]> convergenceLog = new ArrayList<>(); // [iter_best, global_best, time_ms, mem_bytes]
+    protected final List<double[]> convergenceLog = new ArrayList<>(); // [iter_best, global_best, time_sec, mem_mb]
     protected long solveStartTime;
 
     public List<double[]> getConvergenceLog() { return convergenceLog; }
@@ -97,13 +97,15 @@ public class AcoEngine {
                 .parallel()
                 .mapToObj(a -> constructSolution())
                 .collect(Collectors.toList());
+            double[] costs = new double[numAnts];
             double iterBestDist = Double.MAX_VALUE;
-            for (List<List<Integer>> routes : allRoutes) {
-                double dist = VrpSolution.calcDistance(routes, problem);
+            for (int a = 0; a < numAnts; a++) {
+                double dist = VrpSolution.calcDistance(allRoutes.get(a), problem);
+                costs[a] = dist;
                 if (dist < iterBestDist) iterBestDist = dist;
-                if (dist < bestDist) { bestDist = dist; bestRoutes = routes; }
+                if (dist < bestDist) { bestDist = dist; bestRoutes = allRoutes.get(a); }
             }
-            updatePheromone(allRoutes);
+            updatePheromone(allRoutes, costs);
             logConvergence(iter, iterBestDist);
         }
         return new VrpSolution(bestRoutes, bestDist);
@@ -113,23 +115,21 @@ public class AcoEngine {
         int n = problem.size();
         boolean[] visited = new boolean[n];
         visited[0] = true;
+        int unvisited = n - 1;
         List<List<Integer>> routes = new ArrayList<>();
 
         while (true) {
             List<Integer> route = new ArrayList<>();
             int current = 0;
             int load = 0;
-            boolean added = true;
-            while (added) {
-                added = false;
+            while (true) {
                 int next = selectNext(current, visited, load);
-                if (next == -1)
-                    break;
+                if (next == -1) break;
                 visited[next] = true;
+                unvisited--;
                 route.add(next);
                 load += problem.nodes.get(next).demand;
                 current = next;
-                added = true;
             }
             if (route.isEmpty()) {
                 for (int i = 1; i < n; i++)
@@ -137,14 +137,7 @@ public class AcoEngine {
                 break;
             }
             routes.add(route);
-            boolean allVisited = true;
-            for (int i = 1; i < n; i++)
-                if (!visited[i]) {
-                    allVisited = false;
-                    break;
-                }
-            if (allVisited)
-                break;
+            if (unvisited == 0) break;
         }
         return routes;
     }
@@ -184,17 +177,14 @@ public class AcoEngine {
         return -1;
     }
 
-    protected void updatePheromone(List<List<List<Integer>>> allRoutes) {
+    protected void updatePheromone(List<List<List<Integer>>> allRoutes, double[] costs) {
         int n = problem.size();
         for (int i = 0; i < n; i++)
             for (int j = 0; j < n; j++)
                 pheromone[i][j] *= (1 - rho);
 
-        for (List<List<Integer>> routes : allRoutes) {
-            double dist = VrpSolution.calcDistance(routes, problem);
-            double delta = q / dist;
-            depositPheromone(routes, delta);
-        }
+        for (int a = 0; a < numAnts; a++)
+            depositPheromone(allRoutes.get(a), q / costs[a]);
     }
 
     public double getBfHitRate() { return Double.NaN; }
