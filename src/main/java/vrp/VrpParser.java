@@ -18,13 +18,62 @@ public class VrpParser {
         }
     }
 
-    public static ParsedInstance parse(String vrpPath) throws IOException {
-        List<String> lines = Files.readAllLines(Paths.get(vrpPath));
+    // Solomon VRPTW format:
+    // Line 1: instance name
+    // VEHICLE section: NUMBER  CAPACITY
+    // CUSTOMER section: CUST_NO  X  Y  DEMAND  READY_TIME  DUE_DATE  SERVICE_TIME
+    public static ParsedInstance parse(String path) throws IOException {
+        List<String> lines = Files.readAllLines(Paths.get(path));
 
         String name = "";
-        int dimension = 0, capacity = 0, optimalValue = -1;
-        Map<Integer, int[]> coords = new LinkedHashMap<>();
-        Map<Integer, Integer> demands = new LinkedHashMap<>();
+        int maxVehicles = 0, capacity = 0;
+        List<Node> nodes = new ArrayList<>();
+
+        boolean inVehicle = false, inCustomer = false;
+        for (String raw : lines) {
+            String line = raw.trim();
+            if (line.isEmpty()) continue;
+
+            if (name.isEmpty() && !line.toUpperCase().startsWith("VEHICLE")
+                               && !line.toUpperCase().startsWith("CUSTOMER")) {
+                name = line;
+                continue;
+            }
+            if (line.toUpperCase().startsWith("VEHICLE")) { inVehicle = true; inCustomer = false; continue; }
+            if (line.toUpperCase().startsWith("CUSTOMER")) { inCustomer = true; inVehicle = false; continue; }
+            // skip header lines (non-numeric first token)
+            if (!Character.isDigit(line.charAt(0))) continue;
+
+            String[] p = line.split("\\s+");
+            if (inVehicle && maxVehicles == 0) {
+                maxVehicles = Integer.parseInt(p[0]);
+                capacity    = Integer.parseInt(p[1]);
+                inVehicle = false;
+            } else if (inCustomer) {
+                double x           = Double.parseDouble(p[1]);
+                double y           = Double.parseDouble(p[2]);
+                int    demand      = Integer.parseInt(p[3]);
+                double readyTime   = Double.parseDouble(p[4]);
+                double dueDate     = Double.parseDouble(p[5]);
+                double serviceTime = Double.parseDouble(p[6]);
+                nodes.add(new Node(x, y, demand, readyTime, dueDate, serviceTime));
+            }
+        }
+
+        return new ParsedInstance(new VrpProblem(nodes, capacity, maxVehicles), name, -1);
+    }
+
+    // TSPLIB CVRP format (.vrp)
+    // Sections: NODE_COORD_SECTION, DEMAND_SECTION, DEPOT_SECTION
+    // No time windows → readyTime=0, dueDate=1e9, serviceTime=0
+    public static ParsedInstance parseCvrp(String path) throws IOException {
+        List<String> lines = Files.readAllLines(Paths.get(path));
+
+        String name = "";
+        int capacity = 0, dimension = 0, optimalValue = -1;
+        double[][] coords = null;
+        int[] demands = null;
+        int depotId = 1; // 1-indexed
 
         String section = "";
         for (String raw : lines) {
@@ -32,51 +81,51 @@ public class VrpParser {
             if (line.isEmpty() || line.equals("EOF")) continue;
 
             if (line.startsWith("NAME")) {
-                name = line.split(":")[1].trim();
+                name = line.contains(":") ? line.split(":", 2)[1].trim() : line.split("\\s+", 2)[1].trim();
             } else if (line.startsWith("COMMENT")) {
-                String comment = line.contains(":") ? line.split(":", 2)[1].trim() : line.trim();
-                // "Optimal value: 784" 또는 "Best value: 1071"
-                for (String tag : new String[]{"Optimal value:", "Best value:"}) {
-                    int idx = comment.indexOf(tag);
+                String comment = line.contains(":") ? line.split(":", 2)[1].trim() : "";
+                for (String pattern : new String[]{"Optimal value:", "Best value:", "optimal value:", "best value:"}) {
+                    int idx = comment.indexOf(pattern);
                     if (idx >= 0) {
-                        String rest = comment.substring(idx + tag.length()).trim().replaceAll("[^0-9].*", "");
+                        String rest = comment.substring(idx + pattern.length()).trim().split("[^0-9]")[0];
                         if (!rest.isEmpty()) { optimalValue = Integer.parseInt(rest); break; }
                     }
                 }
-                // Golden 스타일: COMMENT 전체가 순수 숫자(실수)
-                if (optimalValue < 0) {
-                    try { optimalValue = (int) Math.round(Double.parseDouble(comment)); } catch (NumberFormatException ignored) {}
-                }
             } else if (line.startsWith("DIMENSION")) {
-                dimension = Integer.parseInt(line.split(":")[1].trim());
+                dimension = Integer.parseInt(line.split("[:\\s]+")[1].trim());
+                coords = new double[dimension + 1][2];
+                demands = new int[dimension + 1];
             } else if (line.startsWith("CAPACITY")) {
-                capacity = Integer.parseInt(line.split(":")[1].trim());
+                capacity = Integer.parseInt(line.split("[:\\s]+")[1].trim());
             } else if (line.startsWith("NODE_COORD_SECTION")) {
                 section = "COORD";
             } else if (line.startsWith("DEMAND_SECTION")) {
                 section = "DEMAND";
             } else if (line.startsWith("DEPOT_SECTION")) {
                 section = "DEPOT";
-            } else if (section.equals("COORD")) {
-                String[] parts = line.split("\\s+");
-                int id = Integer.parseInt(parts[0]);
-                coords.put(id, new int[]{(int) Math.round(Double.parseDouble(parts[1])),
-                                         (int) Math.round(Double.parseDouble(parts[2]))});
-            } else if (section.equals("DEMAND")) {
-                String[] parts = line.split("\\s+");
-                int id = Integer.parseInt(parts[0]);
-                demands.put(id, Integer.parseInt(parts[1]));
+            } else if (!line.isEmpty() && Character.isDigit(line.charAt(0))) {
+                String[] p = line.split("\\s+");
+                int id = Integer.parseInt(p[0]);
+                if (section.equals("COORD") && coords != null) {
+                    coords[id][0] = Double.parseDouble(p[1]);
+                    coords[id][1] = Double.parseDouble(p[2]);
+                } else if (section.equals("DEMAND") && demands != null) {
+                    demands[id] = Integer.parseInt(p[1]);
+                } else if (section.equals("DEPOT")) {
+                    if (id > 0) depotId = id;
+                }
             }
         }
 
-        // node 0 = depot (id 1 in file), rest = customers
+        // build nodes: depot first (index 0), then customers
         List<Node> nodes = new ArrayList<>();
+        double bigT = 1e9;
+        nodes.add(new Node(coords[depotId][0], coords[depotId][1], 0, 0, bigT, 0));
         for (int id = 1; id <= dimension; id++) {
-            int[] xy = coords.get(id);
-            int demand = demands.getOrDefault(id, 0);
-            nodes.add(new Node(id - 1, xy[0], xy[1], demand));
+            if (id == depotId) continue;
+            nodes.add(new Node(coords[id][0], coords[id][1], demands[id], 0, bigT, 0));
         }
 
-        return new ParsedInstance(new VrpProblem(nodes, capacity), name, optimalValue);
+        return new ParsedInstance(new VrpProblem(nodes, capacity, dimension), name, optimalValue);
     }
 }
