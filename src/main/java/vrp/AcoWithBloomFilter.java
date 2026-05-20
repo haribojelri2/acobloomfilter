@@ -12,8 +12,6 @@ public class AcoWithBloomFilter extends AcoEngine {
     private final BloomFilter bloomFilter;
     private final boolean useTwoOpt;
     private final int maxSubPath;
-    private double totalHitRate = 0.0;
-    private int hitRateCount = 0;
 
     public AcoWithBloomFilter(VrpProblem problem, int numAnts, int maxIter,
                                double alpha, double beta, double rho, double q,
@@ -158,8 +156,6 @@ public class AcoWithBloomFilter extends AcoEngine {
     public VrpSolution solve() {
         solveStartTime = System.nanoTime();
         for (int iter = 0; iter < maxIter; iter++) {
-            bloomFilter.resetStats();
-
             List<List<List<Integer>>> allRoutes = IntStream.range(0, numAnts)
                 .parallel()
                 .mapToObj(a -> constructSolution())
@@ -174,19 +170,10 @@ public class AcoWithBloomFilter extends AcoEngine {
                 if (dist < bestDist) { bestDist = dist; bestRoutes = allRoutes.get(a); }
             }
 
-            if (bloomFilter.getQueryCount() > 0) {
-                totalHitRate += bloomFilter.getHitRate();
-                hitRateCount++;
-            }
-
             updatePheromone(allRoutes, costs);
             logConvergence(iter, iterBestDist);
         }
         return new VrpSolution(bestRoutes, bestDist);
     }
 
-    @Override
-    public double getBfHitRate() {
-        return hitRateCount > 0 ? totalHitRate / hitRateCount : Double.NaN;
-    }
 }

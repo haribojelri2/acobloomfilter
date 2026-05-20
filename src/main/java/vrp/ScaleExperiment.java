@@ -9,20 +9,20 @@ public class ScaleExperiment {
     static final int ANTS = 30, ITER = 100;
 
     static final String[][] INSTANCES = {
-        {"50",   "benchmark_data/B/B/B-n50-k7.vrp"},
-        {"100",  "benchmark_data/E/E/E-n101-k8.vrp"},
-        {"200",  "benchmark_data/Golden/Golden/Golden_5.vrp"},
-        {"500",  "benchmark_data/Golden/Golden/Golden_12.vrp"},
-        {"1000", "benchmark_data/XL/XL/XL-n1048-k237.vrp"},
-        {"2000", "benchmark_data/XL/XL/XL-n2028-k617.vrp"},
-        {"4000", "benchmark_data/XL/XL/XL-n3975-k687.vrp"},
-        // {"6000", "benchmark_data/XL/XL/XL-n6168-k1922.vrp"},
-        // {"8000", "benchmark_data/XL/XL/XL-n8028-k294.vrp"},
-        // {"10000","benchmark_data/XL/XL/XL-n10001-k1570.vrp"},
+        {"50",   "C:/Users/user/Downloads/B/B/B-n50-k7.vrp"},
+        {"100",  "C:/Users/user/Downloads/E/E/E-n101-k8.vrp"},
+        {"200",  "C:/Users/user/Downloads/Golden/Golden/Golden_5.vrp"},
+        {"500",  "C:/Users/user/Downloads/Golden/Golden/Golden_12.vrp"},
+        {"1000", "C:/Users/user/Downloads/XL/XL/XL-n1048-k237.vrp"},
+        {"2000", "C:/Users/user/Downloads/XL/XL/XL-n2028-k617.vrp"},
+        // {"4000", "C:/Users/user/Downloads/XL/XL/XL-n3975-k687.vrp"},
+        // {"6000", "C:/Users/user/Downloads/XL/XL/XL-n6168-k1922.vrp"},
+        // {"8000", "C:/Users/user/Downloads/XL/XL/XL-n8028-k294.vrp"},
+        // {"10000","C:/Users/user/Downloads/XL/XL/XL-n10001-k1570.vrp"},
     };
 
-   // static final String[] ALGOS = {"ACO", "ACO+2opt", "ACO+Tabu", "ACO+BF", "ACO+2opt+Tabu", "ACO+2opt+BF", "ACO+TabuLikeBF", "ACO+2opt+TabuLikeBF"};
-    static final String[] ALGOS = {"ACO+2opt+Tabu", "TabuLikeBF+fpr=0.001", "TabuLikeBF+fpr=0.01", "TabuLikeBF+fpr=0.05", "TabuLikeBF+fpr=0.20"};
+   static final String[] ALGOS = {"ACO", "ACO+Tabu", "TabuLikeBF+fpr=0.001", "TabuLikeBF+fpr=0.01", "TabuLikeBF+fpr=0.05", "TabuLikeBF+fpr=0.20"};
+    // static final String[] ALGOS = {"ACO+Tabu", "TabuLikeBF+fpr=0.001", "TabuLikeBF+fpr=0.01", "TabuLikeBF+fpr=0.05", "TabuLikeBF+fpr=0.20"};
     public static void main(String[] args) throws Exception {
         new File("out").mkdirs();
         for (String[] entry : INSTANCES) {
@@ -33,8 +33,8 @@ public class ScaleExperiment {
             int opt = inst.optimalValue;
             System.out.printf("%n=== size~%s  name=%s  N=%d  opt=%s ===%n",
                 sizeLabel, inst.name, p.size(), opt < 0 ? "N/A" : String.valueOf(opt));
-            System.out.printf("%-16s %9s %8s%n", "algo", "avg_cost", "best_cost");
-            System.out.println("-".repeat(38));
+            System.out.printf("%-16s %9s %8s %9s%n", "algo", "avg_cost", "best_cost", "avg_time");
+            System.out.println("-".repeat(48));
 
             for (String algo : ALGOS) {
                 runAlgo(algo, sizeLabel, p, opt);
@@ -46,13 +46,19 @@ public class ScaleExperiment {
     static void runAlgo(String algo, String sizeLabel, VrpProblem p, int opt) throws Exception {
         double sumCost = 0;
         double bestCost = Double.MAX_VALUE;
+        double sumTime = 0;
         double[] logSum = null;
         double[] seedBests = new double[RUNS];
+        double[] seedTimes = new double[RUNS];
 
         for (int r = 0; r < RUNS; r++) {
             AcoEngine engine = makeEngine(algo, p);
             engine.rng = new Random(r);
+            long t0 = System.nanoTime();
             VrpSolution sol = engine.solve();
+            double elapsed = (System.nanoTime() - t0) / 1e9;
+            sumTime += elapsed;
+            seedTimes[r] = elapsed;
             double cost = sol.totalDistance;
             sumCost += cost;
             if (cost < bestCost) bestCost = cost;
@@ -69,11 +75,12 @@ public class ScaleExperiment {
         }
 
         double avgCost = sumCost / RUNS;
-        System.out.printf("%-16s %9.2f %8.2f%n", algo, avgCost, bestCost);
+        double avgTime = sumTime / RUNS;
+        System.out.printf("%-16s %9.2f %8.2f %8.2fs%n", algo, avgCost, bestCost, avgTime);
 
         String tag = sizeLabel + "_" + algo.replace("+", "_");
         saveConvergence(tag, logSum);
-        saveSeedBests(tag, seedBests);
+        saveSeedBests(tag, seedBests, seedTimes);
     }
 
     static AcoEngine makeEngine(String algo, VrpProblem p) {
@@ -108,11 +115,11 @@ public class ScaleExperiment {
         }
     }
 
-    static void saveSeedBests(String tag, double[] seedBests) throws Exception {
+    static void saveSeedBests(String tag, double[] seedBests, double[] seedTimes) throws Exception {
         try (PrintWriter pw = new PrintWriter(new FileWriter("out/seeds_" + tag + ".csv"))) {
-            pw.println("seed,best_cost");
+            pw.println("seed,best_cost,time_sec");
             for (int r = 0; r < seedBests.length; r++)
-                pw.printf("%d,%.4f%n", r, seedBests[r]);
+                pw.printf("%d,%.4f,%.6f%n", r, seedBests[r], seedTimes[r]);
         }
     }
 }

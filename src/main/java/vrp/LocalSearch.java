@@ -33,19 +33,19 @@ public class LocalSearch {
         List<Integer> best = new ArrayList<>(route);
         List<Integer> current = new ArrayList<>(route);
         double bestDist = routeDist(best, problem);
-        Set<String> tabuList = new LinkedHashSet<>();
+        Set<Long> tabuList = new LinkedHashSet<>();
 
         for (int iter = 0; iter < maxIter; iter++) {
             List<Integer> bestNeighbor = null;
             double bestNeighborDist = Double.MAX_VALUE;
-            String bestMove = null;
+            long bestMove = -1;
 
             double currentDist = routeDist(current, problem);
 
             for (int i = 0; i < current.size() - 1; i++) {
                 for (int j = i + 1; j < current.size(); j++) {
-                    String move = current.get(i) + "-" + current.get(j);
-                    
+                    long move = ((long) current.get(i) << 20) | current.get(j);
+
                     int a = (i == 0) ? 0 : current.get(i - 1);
                     int b = current.get(i);
                     int c = (i == current.size() - 1) ? 0 : current.get(i + 1);
@@ -63,15 +63,13 @@ public class LocalSearch {
                     }
                     double neighborDist = currentDist + (after - before);
 
-                    // Aspiration criterion: if neighbor is global best, override tabu
                     if (tabuList.contains(move) && neighborDist >= bestDist) {
                         continue;
                     }
-                    
+
                     if (neighborDist < bestNeighborDist) {
                         bestNeighborDist = neighborDist;
                         bestMove = move;
-                        // Build neighbor list lazily only for the best
                         bestNeighbor = new ArrayList<>(current);
                         Collections.swap(bestNeighbor, i, j);
                     }
@@ -81,7 +79,7 @@ public class LocalSearch {
             current = bestNeighbor;
             tabuList.add(bestMove);
             if (tabuList.size() > tabuTenure) {
-                Iterator<String> it = tabuList.iterator();
+                Iterator<Long> it = tabuList.iterator();
                 it.next(); it.remove();
             }
             if (bestNeighborDist < bestDist - 1e-10) {
@@ -110,7 +108,7 @@ public class LocalSearch {
     public static List<List<Integer>> applyTabu(List<List<Integer>> routes, VrpProblem problem) {
         List<List<Integer>> result = new ArrayList<>();
         for (List<Integer> route : routes) {
-            int tenure = Math.max(5, route.size() / 3);
+            int tenure = (int) Math.floor(Math.sqrt(route.size()));
             result.add(route.size() < 2 ? route : tabu(route, problem, 50, tenure));
         }
         return result;
